@@ -1,0 +1,18 @@
+.one{
+   border: 2px solid black;
+    border-style: dotted;
+    width: 40%;
+    height: 200px;
+}
+.two{
+    background-color: red;
+    width: 50%;
+    height: 50px;
+    font-size: xx-large;
+}
+.three{
+    background-color: red;
+    width: 50%;
+    height: 50px;
+    font-size: xx-large;
+}

@@ -1,0 +1,20 @@
+.one{
+    border: 2px solid black;
+    border-style: dotted;
+}
+.two{
+    border: 2px solid greenyellow;
+    width: 50%;
+    height: 300px;
+    position: relative;
+    right: 0;
+    margin: 20px;
+    
+}
+.three{
+    border: 2px solid greenyellow;
+    width: 20%;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}

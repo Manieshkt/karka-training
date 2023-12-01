@@ -1,0 +1,43 @@
+.container{
+    border: 2px solid black;
+    width: 70%;
+    margin-left: 20%;
+}
+.head{
+    text-align: center;
+    background-color: pink;
+    border-right:  2px solid black;
+    border-left:  2px solid black;
+    width: 70%;
+    height: 60px;
+    margin-left: 20%;
+}
+.nav{
+    text-align: center;
+    background-color: violet;
+    border-right:  2px solid black;
+    border-left:  2px solid black;
+    width: 70%;
+    height: 40px;
+    margin-left: 20%;
+
+}
+.main{
+    text-align: center;
+    background-color: white;
+    border-right:  2px solid black;
+    border-left:  2px solid black;
+    width: 70%;
+    height: 100px;
+    margin-left: 20%;
+}
+.footer{
+    text-align: center;
+    background-color: purple;
+    border-right:  2px solid black;
+    border-left:  2px solid black;
+    border-bottom: 2px solid black;
+    width: 70%;
+    height: 40px;
+    margin-left: 20%;
+}

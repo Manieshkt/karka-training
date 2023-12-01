@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let students=[
+        {
+            name:"ajay",
+            age:22,
+            place:"anjugraman",
+            skills:["HTML","CSS","Java"],
+            Education:["B.E","MECH","Engineering"],
+            marks:{
+                Tamil:99,
+                English:99,
+                Maths:99,
+            },
+            Profession:"EEE"
+        },
+
+        {
+            name:"Maniesh",
+            age:24,
+            place:"Eathamozhy",
+            skills:["HTML","CSS","Java","hi"],
+            Education:["B.E","MECH","Engineering"],
+            marks:{
+                Tamil:98,
+                English:97,
+                Maths:96,
+            },
+            Profession:"Mechanical"
+        },
+
+        
+        {
+            name:"Satheesh",
+            age:25,
+            place:"paalpannai",
+            skills:["HTML","CSS","hlo"],
+            Education:["B.E","medical"],
+            marks:{
+                Tamil:92,
+                English:91,
+                Maths:90,
+            },
+            Profession:"Medical"
+        },
+
+        
+        {
+            name:"Mathan",
+            age:27,
+            place:"kanyakumari",
+            skills:["HTML","CSS"],
+            Education:["B.E","Engineering" ],
+            marks:{
+                Tamil:90,
+                English:90,
+                Maths:92,
+            },
+            Profession:"Arts"
+        },
+    ]
+   for (let i=0;i<students.length;i++){
+    // console.log(students[i].name)
+    // console.log(students[i].skills[i])
+    // for (let j=0;j<students[i].skills.length;j++){
+    //     console.log(students[i].skills[j])
+    // }
+    for (let k=0;k<students[i].skills.length;k++){
+        if (students[i].skills[k]=="Java"){
+            console.log(students[i].name)
+        }
+    }
+   }
+
+   
+   
+
+</script>
+</html>

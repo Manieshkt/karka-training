@@ -1,0 +1,25 @@
+/* #one{
+    display: inline;
+}
+#two{
+    display: inline;
+}
+#three{
+    display: block;
+}
+#four{
+    display: block;
+} */
+.one{
+    display: inline-block;
+    padding: 20px;
+    background-color: aqua;
+ 
+
+}
+.two{
+    background-color: violet;
+    display: inline-block;
+    /* width: 40%; */
+    padding: 20px;
+}

@@ -1,0 +1,121 @@
+*{
+    margin: 0%;
+    padding: 0%;
+} 
+body{
+    width: 100%;
+}
+header{
+    background-color: aqua;
+    height: 20vh;
+    width: 98.5%;
+}
+.side{
+    margin-top: 20px;
+}
+.nav{
+    background-color: green;
+    display: inline-block;
+    width: 24%;
+    height: 70vh;
+}
+.texta{
+    background-color: red;
+    display: inline-block;
+    width: 50%;
+    height: 70vh;
+}
+.textb{
+    background-color: orange;
+    display: inline-block;
+    width: 24%;
+    height: 70vh;
+}
+
+@media only screen and (max-width:1200px){
+    header{
+        background-color: aqua;
+        height: 20vh;
+        width: 98.5%;
+    }
+    .side{
+        margin-top: 20px;
+    }
+    .nav{
+        background-color: green;
+        display: inline-block;
+        width: 24%;
+        height: 70vh;
+    }
+    .texta{
+        background-color: red;
+        display: inline-block;
+        width: 50%;
+        height: 70vh;
+    }
+    .textb{
+        background-color: orange;
+        display: inline-block;
+        width: 24%;
+        height: 70vh;
+    }
+}
+
+@media only screen and (max-width:991px){
+    header{
+        background-color: aqua;
+        height: 20vh;
+        width: 98.5%;
+    }
+    .side{
+        margin-top: 20px;
+    }
+    .nav{
+        background-color: green;
+        display: block;
+        width: 98.5%;
+        height: 40vh;
+    }
+    .texta{
+        background-color: red;
+        display: inline-block;
+        width: 50%;
+        height: 80vh;
+        margin-top: 20px;
+    }
+    .textb{
+        background-color: orange;
+        display: inline-block;
+        width: 48%;
+        height: 80vh;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width:775px){
+    header{
+        background-color: aqua;
+        height: 20vh;
+        width: 98.5%;
+    }
+    .side{
+        margin-top: 20px;
+    }
+    .nav{
+        background-color: green;
+        display: block;
+        width: 98.5%;
+        height: 20vh;
+    }
+    .texta{
+        background-color: red;
+        display: block;
+        width: 98.5%;
+        height: 150vh;
+    }
+   .textb{
+    background-color: none;
+    width: 0%;
+    height: 0%;
+   }
+}

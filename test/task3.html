@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="one">demo</button>
+    <p id="demo"></p>
+</body>
+<script>
+    const element=document.getElementById("one")
+    element.addEventListener("mouseover",function1)
+    element.addEventListener("click",function2)
+    element.addEventListener("mouseleave",function3)
+    function function1(){
+        document.getElementById("demo").innerHTML+="text"
+    }
+    function function2(){
+        document.getElementById("demo").innerHTML+="texta"
+    }
+    function function3(){
+        document.getElementById("demo").innerHTML+="textb"
+    }
+</script>
+</html>

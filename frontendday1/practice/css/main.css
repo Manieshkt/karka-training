@@ -1,0 +1,146 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    width: 100%;
+}
+
+.header{
+    text-align: center;
+    padding: 20px 20px;
+    background-color: white;
+}
+.navi{
+    background-color: rgb(3, 3, 3);
+    padding: 10px;
+    border: 5px solid rgb(197, 148, 148) ;
+}
+.navi a{
+    color: white;
+}
+.navi a:last-child{
+    margin-left: 90%;
+}
+
+section{
+    background: rgb(197, 148, 148);
+}
+.section-left{
+    display: inline-block;
+    width: 60%;
+    background-color: rgb(202, 169, 169);
+    height: 100vh;
+    vertical-align: top;
+    padding: 10px;
+}
+.section-right{
+    display: inline-block;
+    width: 36%;
+    background-color: rgb(202, 169, 169);
+    height: 90vh;
+    padding: 10px;
+    margin-top: 0%;
+    padding-bottom: 75px;
+}
+.top-content{
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.bottom-content{
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.topcontenta{
+    background-color: white;
+    padding: 10px;
+}
+.middlecontent{
+    margin-top: 10px;
+    background-color: white;
+    padding: 10px;
+}
+.bottom-contenta{
+    margin-top: 10px;
+    background-color: white;
+    padding: 10px;
+}
+footer{
+    background-color: gray;
+    padding: 10px;
+    text-align: center;
+}
+@media only screen and (max-width:992px){
+    .header{
+        text-align: center;
+        padding: 20px 20px;
+        background-color: white;
+    }
+    .navi{
+        background-color: rgb(3, 3, 3);
+        padding: 10px;
+        border: 5px solid rgb(197, 148, 148) ;
+        text-align: center;
+    }
+    .navi a{
+        color: white;
+    }
+    .navi a:last-child{
+        margin-left: 0%;
+    }
+    
+    section{
+        background: rgb(197, 148, 148);
+    }
+    .section-left{
+        display: block;
+        width: 100%;
+        background-color: rgb(202, 169, 169);
+        padding: 10px;
+    
+    }
+    .section-right{
+        display: block;
+        width: 100%;
+        background-color: rgb(202, 169, 169);
+        padding: 10px;
+        padding-bottom: 75px;
+        margin-top: 43%;
+    }
+    .top-content{
+        background: white;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .bottom-content{
+        background: white;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .topcontenta{
+        background-color: white;
+        padding: 10px;
+    }
+    .middlecontent{
+        margin-top: 10px;
+        background-color: white;
+        padding: 10px;
+    }
+    .bottom-contenta{
+        margin-top: 10px;
+        background-color: white;
+        padding: 10px;
+    }
+    footer{
+        background-color: gray;
+        padding: 10px;
+        text-align: center;
+        margin-top: 30%;
+
+    }
+}
+
+
+

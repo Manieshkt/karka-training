@@ -1,0 +1,81 @@
+.container{
+    height: 100%;
+    background-color: grey;
+    padding: 10px;
+}
+.head{
+    background-color: aquamarine;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-right: 10px;
+    padding-top: 50px;
+}
+.body{
+    width: 100%;
+    margin-top: 10px
+}
+.main{
+    display: inline-block;
+    text-align: center;
+    height: 100px;
+    background-color: aquamarine;
+    width: 30%;
+    padding-top: 120px;
+    padding-left: 50px;
+    padding-right: 300px;
+}
+.right{
+    display: inline-block;
+    width: 20%;
+    margin-left: 20px;
+}
+.hero{
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    background-color: aquamarine;
+    width: 300px;
+    height: 100px;
+}
+.action{
+    background-color: yellowgreen;
+    text-align: center;
+    height: 100px;
+    width: 300px;
+}
+.features{
+    background-color: aquamarine;
+    text-align: center;
+    height: 100px;
+    width: 970px;
+    margin-top: 10px;
+}
+.bottom{
+    width: 100%;
+    margin-top: 10px;
+}
+.copy{
+    background-color: aquamarine;
+    display: inline-block;
+    width: 30%;
+    height: 40px;
+    padding-left: 50px;
+    padding-right: 300px;
+}
+.call{
+    background-color: yellowgreen;
+    display: inline-block;
+    margin-left: 20px;
+    width: 300px;
+    height: 40px;
+}
+.foot{
+    background-color: aquamarine;
+    width: 970px;
+    height: 50px;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+}

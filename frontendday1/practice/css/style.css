@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: red;
+}
+/* @media only screen and (max-width:1200px){
+    body{
+        background-color: orange !important;
+    }
+}
+@media only screen and (max-width:992px){
+    body{
+        background-color: violet !important;
+    }
+}
+@media only screen and (max-width:776px){
+    body{
+        background-color: green !important;
+    }
+}
+@media only screen and (max-width:556px){
+    body{
+        background-color: blue !important;
+    }
+} */
+
+/* @media only screen and (min-width:556px){
+    body{
+        background-color: blue !important;
+    }
+} 
+@media only screen and (min-width:776px){
+    body{
+        background-color: green !important;
+    }
+} 
+@media only screen and (min-width:992px){
+    body{
+        background-color: red !important;
+    }
+} 
+@media only screen and (min-width:1200px){
+    body{
+        background-color: gray !important;
+    }
+}  */

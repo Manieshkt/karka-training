@@ -1,0 +1,388 @@
+
+.container{
+    width: 100%;
+    /* background-color: grey; */
+    border: 20px solid grey;
+}
+.header{
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+   
+}
+.sub{
+    text-align: center;
+     background-color: white;
+    
+}
+.nav{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+.one{
+    position: absolute;
+    right: 20px;
+}
+.two{
+    position: absolute;
+    left: 100px;
+}
+.content{
+    display: flex;
+    width: 100%;
+    background-color: grey;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+     background-color: white;
+     border:10px solid grey
+}
+.first{
+    font-size: larger;
+    padding: 5px;
+}
+.second{
+    padding: 5px;
+}
+.pic{
+    padding: 5px;
+    height: 100px;
+}
+.third{
+    padding: 5px;
+}
+.fourth{
+    font-size: larger;
+    padding: 5px;
+}
+.fifth{
+    padding: 5px;
+}
+.pica{
+    padding: 5px;
+    height: 100px;
+}
+.sixth{
+    padding: 5px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: space-between;
+     background-color: white;
+    
+      border: 10px solid grey;
+     
+}
+.seven{
+    font-size: x-large;
+    border-top: 10px solid grey;
+
+}
+.picb{
+    width: 80%;
+    height: 50px;
+}
+.eight{
+    border-bottom: 10px solid grey;
+}
+.nine{
+    font-size: larger;
+}
+.picc{
+    width: 80%;
+    height: 50px;
+}
+.picd{
+    width: 80%;
+    height: 50px;
+}
+.pice{
+    width: 80%;
+    height: 50px;
+}
+.ten{
+    border-top: 10px solid grey;
+}
+.eleven{
+   
+    width: 100%;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+    /* padding: 30px; */
+    background-color: gainsboro;
+    height: 50px;
+}
+
+@media screen and (max-width:992px){
+
+.container{
+    width: 100%;
+    border: 20px solid grey;
+}
+.header{
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+   
+}
+.sub{
+    text-align: center;
+     background-color: white;
+    
+}
+.nav{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+.one{
+    position: absolute;
+    right: 20px;
+}
+.two{
+    position: absolute;
+    left: 100px;
+}
+.content{
+    display: flex;
+    width: 100%;
+    background-color: grey;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+     background-color: white;
+     border:10px solid grey
+     /* margin: 5px; */
+}
+.first{
+    font-size: larger;
+    padding: 5px;
+}
+.second{
+    padding: 5px;
+}
+.pic{
+    padding: 5px;
+    height: 100px;
+}
+.third{
+    padding: 5px;
+}
+.fourth{
+    font-size: larger;
+    padding: 5px;
+    /* border-top: 10px solid grey; */
+}
+.fifth{
+    padding: 5px;
+}
+.pica{
+    padding: 5px;
+    height: 100px;
+}
+.sixth{
+    padding: 5px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: space-between;
+     background-color: white;
+    
+      border: 10px solid grey;
+     
+}
+.seven{
+    font-size: x-large;
+    border-top: 10px solid grey;
+
+}
+.picb{
+    width: 80%;
+    height: 50px;
+}
+.eight{
+    border-bottom: 10px solid grey;
+}
+.nine{
+    font-size: larger;
+}
+.picc{
+    width: 80%;
+    height: 50px;
+}
+.picd{
+    width: 80%;
+    height: 50px;
+}
+.pice{
+    width: 80%;
+    height: 50px;
+}
+.ten{
+    border-top: 10px solid grey;
+}
+.eleven{
+   
+    width: 100%;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+    /* padding: 30px; */
+    background-color: gainsboro;
+    /* border: 20px solid grey; */
+    height: 50px;
+}
+}
+
+
+@media screen and (max-width:776px){
+    /* body{
+        background-color: grey;
+    } */
+    .container{
+        width: 100%;
+        border: 20px solid grey;
+    }
+    .header{
+        font-size: xx-large;
+        text-align: center;
+        padding: 20px;
+        background-color: white;
+    }
+    .sub{
+        text-align: center;
+         background-color: white;
+    }
+    .nav{
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        padding: 20px;
+        position: relative;
+    }
+    .one{
+        position: absolute;
+        right: 20px;
+    }
+    .two{
+        position: absolute;
+        left: 100px;
+    }
+    .content{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+         background-color: white;
+         border:10px solid grey
+    }
+    .first{
+        font-size: larger;
+        padding: 5px;
+    }
+    .second{
+        padding: 5px;
+    }
+    .pic{
+        padding: 5px;
+        height: 100px;
+    }
+    .third{
+        padding: 5px;
+    }
+    .fourth{
+        font-size: larger;
+        padding: 5px;
+        border-top: 10px solid grey;
+    }
+    .fifth{
+        padding: 5px;
+    }
+    .pica{
+        padding: 5px;
+        height: 100px;
+    }
+    .sixth{
+        padding: 5px;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+         background-color: white;
+         
+    }
+    .seven{
+        font-size: x-large;
+        border-top: 10px solid grey;
+    
+    }
+    .picb{
+        width: 80%;
+        height: 50px;
+    }
+    .eight{
+        border-bottom: 10px solid grey;
+    }
+    .nine{
+        font-size: larger;
+    }
+    .picc{
+        width: 80%;
+        height: 50px;
+    }
+    .picd{
+        width: 80%;
+        height: 50px;
+    }
+    .pice{
+        width: 80%;
+        height: 50px;
+    }
+    .ten{
+        border-top: 10px solid grey;
+        margin-top: 10px;
+    }
+    .eleven{
+        border-bottom: 10px solid grey;
+        width: 100%;
+    }
+    .footer{
+        width: 100%;
+        text-align: center;
+        font-size: xx-large;
+        /* padding: 30px; */
+        background-color: gainsboro;
+        /* border-right: 20px solid grey; */
+        height: 50px;
+    }
+    
+}

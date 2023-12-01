@@ -1,0 +1,72 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(46, 134, 134);
+    background-image: url("./download\ \(13\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    width: 100%;
+}
+.three{
+    display: inline-block;
+    height: 209px;
+    width: 20%;
+    margin-left: 20px;
+}
+.eight{
+    display: inline-block;
+    height: 209px ;
+    width: 20% ;
+}
+.onea{
+    display: inline-block;
+    height: 209px;
+    width: 20%;
+}
+.sixa{
+    display: inline-block;
+    height: 209px;
+    width: 20%;
+}
+.hi{
+    display: inline-block;
+   
+}
+.pic{
+    display: inline-block;
+}
+.info{
+    background-image: url("./download\ \(8\).jpg");
+    background-repeat: no-repeat;
+    width: 100% !important;
+    /* display: inline; */
+}
+@media only screen and (max-width:991px){
+    .three{
+        display: inline-block;
+    }
+    .eight{
+        display: inline-block;
+    }
+    .onea{
+        display: inline-block;
+    }
+    .sixa{
+        display: inline-block;
+    }
+    .hi{
+        display: inline-block;
+       
+    }
+    .pic{
+        display: inline-block;
+    }
+    .info{
+        background-image: url("./download\ \(8\).jpg");
+        background-repeat: no-repeat;
+        width: 100% !important;
+        /* display: inline; */
+    }
+}

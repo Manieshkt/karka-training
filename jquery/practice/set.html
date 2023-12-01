@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <p id="one">bye</p>
+    <p id="two">hi</p>
+    <input value="Maniesh"/>
+    <button>submit</button>
+    <button id="three">click</button>
+    <button id="four">clicka</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#one").text("maniesh")
+        })
+        $("#three").click(function(){
+            $("#two").html("<h1>karak</h1>")
+        })
+        $("#four").click(function(){
+            $("input").val("academy")
+        })
+    })
+</script>
+</html>

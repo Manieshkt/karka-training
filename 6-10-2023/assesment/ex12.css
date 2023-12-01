@@ -1,0 +1,148 @@
+.container{
+    background-color: grey;
+    height: 100%;
+    padding: 10px;
+}
+.header{
+    text-align: center;
+    color: white;
+    height: 90px;
+}
+.list{
+    background-color: violet;
+    display: inline-block;
+    width: 90%;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 40px;
+}
+.home{
+    color: black;
+    display: inline-block;
+    padding-right: 30px;
+    text-align: center;
+    margin-left: 60px;
+}
+.team{
+    display: inline-block;
+    color: black;
+    padding-right: 30px;
+    margin-left: 60px;
+}
+.projects{
+    display: inline-block;
+    color: black;
+    padding-right: 30px;
+    margin-left: 60px;
+}
+.contact{
+    display: inline-block;
+    color: black;
+    padding-right: 30px;
+    margin-left: 60px;
+}
+.search{
+    display: inline-block;
+    color: grey;
+    background-color: white;
+    padding-right: 60px;
+    margin-left: 60px;
+}
+.go{
+    display: inline-block;
+    color: white;
+    padding-right: 10px;
+    background-color: black;
+    margin-left: 20px;
+}
+.body{
+    background-color: white;
+    margin-top: 10px;
+    width: 70%;
+    margin-left: 30px;
+    padding: 20px;
+    display: inline-block;
+}
+.article{
+    color: black;
+    height: 40px;
+    text-align: center;
+}
+.text{
+    height: 90px;
+}
+.sub{
+    height: 40px;
+}
+.text-a{
+    height: 40px;
+}
+.text-b{
+    margin-top: 10px;
+    height: 60px;
+}
+.sub-a{
+    height: 40px;
+}
+.text-c{
+    height: 40px;
+}
+.textd{
+    height: 40px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.right{
+    display: inline-block;
+    width: 15%;
+    background-color: violet;
+    margin-left: 5px;
+}
+.related{
+    padding-top: 48px;
+    height: 40px;
+    text-align: center;
+}
+.a{
+    color: blue;
+    height: 20px;
+    margin-left: 10px;
+    padding-top: 40px;
+}
+.b{
+    padding-top: 30px;
+    color: blue;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.c{
+    padding-top: 40px;
+    color: blue;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.d{
+    padding-top: 30px;
+    color: blue;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.e{
+    padding-top: 30px;
+    color: blue;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-bottom: 32px;
+}
+.copy{
+    background-color: white;
+    margin-top: 10px;
+    text-align: center;
+    width: 90%;
+    margin-left: 30px;
+    height: 40px;
+}

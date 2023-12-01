@@ -1,0 +1,83 @@
+.container{
+    background-color: black;
+}
+.background{
+    background-image: url('./images/istockphotobarista.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+.texta{
+    margin-top: 80px;
+}
+.buton{
+    border-radius: 20px;
+    background-color: rgb(199, 191, 191);
+}
+.butona{
+    border-radius: 20px;
+    background-color: rgb(170, 54, 12);
+}
+.rowa{
+    background-color: rgb(179, 137, 83);
+}
+.backgrounda{
+    background-image: url('./images/cafe-1869656_640.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    width: 500px;
+    margin-left: 20px;
+}
+.textb{
+    margin-top: 430px;
+}
+.text-d{
+    margin-top: 120px;
+}
+.butonc{
+    background-color: rgb(179, 137, 83);
+    border-radius: 10px;
+}
+.paint{
+    background-color: burlywood;
+}
+.backgroundb{
+    background-image: url('./images/baristaaaaa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 24%;
+}
+.name{
+    margin-top: 300px;
+}
+.backgroundc{
+    background-image: url('./images/baristaaaaa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 24%;
+}
+.backgroundd{
+    background-image: url('./images/baristaaaaa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 24%;
+}
+.backgrounde{
+    background-image: url('./images/baristaaaaa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 24%;
+}
+.backgrounds{
+    background-image: url('./images/istockphotobarista.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}

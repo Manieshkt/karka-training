@@ -1,0 +1,188 @@
+.container{
+    width: 100%;
+}
+.one{
+    background-color: blueviolet;
+    width: 100%;
+    height: 40px;
+}
+.head{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+.two{
+    width: 40%;
+    height: 220px;
+    background-color: pink;
+    
+}
+.center{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.three{
+    width: 48%;
+    background-color: violet;
+    height: 150px;
+    
+}
+.four{
+    width: 48%;
+    background-color: pink;
+    height: 150px;
+    
+}
+.five{
+    width: 98%;
+    background-color: blueviolet;
+    height: 50px;
+  
+    margin-top: 20px; 
+}
+
+@media screen and(max-width:962px){
+    .container{
+        width: 100%;
+    }
+    .one{
+        background-color: blueviolet;
+        width: 100%;
+        height: 40px;
+    }
+    .head{
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+       
+    }
+    .two{
+        width: 40%;
+        height: 220px;
+        background-color: pink;
+        
+    }
+    .center{
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .three{
+        width: 48%;
+        background-color: violet;
+        height: 150px;
+    }
+    .four{
+        width: 48%;
+        background-color: pink;
+        height: 150px;
+
+    }
+    .five{
+        width: 98%;
+        background-color: blueviolet;
+        height: 50px;
+      
+        margin-top: 20px; 
+    }
+    
+}
+
+@media screen and (max-width:762px){
+    .container{
+        width: 100%;
+    }
+    .one{
+        background-color: blueviolet;
+        width: 100%;
+        height: 40px;
+    }
+    .head{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .two{
+        width: 100%;
+        height: 220px;
+        background-color: violet;
+        
+    }
+    .center{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+    .three{
+        width: 49%;
+        background-color: pink;
+        height: 150px;
+        
+    }
+    .four{
+        width: 49%;
+        background-color: pink;
+        height: 150px;
+    }
+    .five{
+        width: 100%;
+        background-color: blueviolet;
+        height: 50px;
+      
+        margin-top: 20px; 
+    }
+}
+
+@media screen and (max-width:556px){
+    .container{
+        width: 100%;
+    }
+    .one{
+        background-color: blueviolet;
+        width: 100%;
+        height: 40px;
+    }
+    .head{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 10px;
+        
+    }
+    .two{
+        width: 100%;
+        height: 220px;
+        background-color: violet;
+        
+    }
+    .center{
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+    .three{
+        width: 100%;
+        background-color: pink;
+        height: 150px;
+        
+    }
+    .four{
+        width: 100%;
+        background-color: pink;
+        height: 150px;
+        margin-top: 10px;
+    }
+    .five{
+        width: 100%;
+        background-color: blueviolet;
+        height: 50px;
+      
+        margin-top: 20px; 
+    }
+}

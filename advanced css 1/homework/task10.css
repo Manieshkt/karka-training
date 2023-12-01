@@ -1,0 +1,13 @@
+.one{
+    height: 200px;
+    border: 2px solid #adff2f;
+    position: relative;
+    margin: 20px;
+}
+.two{
+    position: absolute;
+    border: 2px solid greenyellow;
+    height: 100px;
+    left: 400px;
+    top: 40px;
+}

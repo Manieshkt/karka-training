@@ -1,0 +1,176 @@
+.main{
+    /* display: flex; */
+    width: 100%;
+    height: 200px;
+    /* justify-content: space-evenly; */
+    /* display: inline-block; */
+}
+.one{
+    width: 24%;
+    height: 200px;
+    background-color: blue;
+    display: inline-block;
+    border: 1px solid white;
+
+}
+.two{
+    width: 24%;
+    height: 200px;
+    background-color: blue;
+  display: inline-block;
+    border: 1px solid white;
+}
+.three{
+    width: 24%;
+    height: 200px;
+    background-color: blue;
+     display: inline-block;
+    border: 1px solid white;
+}
+.four{
+    width: 24%;
+    height: 200px;
+    background-color: blue;
+     display: inline-block;
+    border: 1px solid white;
+}
+@media screen and (max-width:992px){
+    .one{
+    width: 24%;
+    height: 200px;
+    background-color: blue;
+    display: inline-block;
+    border: 1px solid white;
+
+}
+.two{
+    width: 24%;
+    height: 200px;
+    background-color: blue;
+   display: inline-block;
+    border: 1px solid white;
+}
+.three{
+    width: 24%;
+    height: 200px;
+    background-color: blue;
+     display: inline-block;
+    border: 1px solid white;
+}
+.four{
+    width: 24%;
+    height: 200px;
+    background-color: blue;
+     display: inline-block;
+    border: 1px solid white;
+}
+}
+@media screen and (max-width:776px){
+   .main{
+    width: 100%;
+   }
+    .one{
+    width: 32%;
+    height: 200px;
+    background-color: blue;
+    display: inline-block;
+    border: 1px solid white;
+
+}
+.two{
+    width: 32%;
+    height: 200px;
+    background-color: blue;
+   display: inline-block;
+    border: 1px solid white;
+}
+.three{
+    width: 32%;
+    height: 200px;
+    background-color: blue;
+     display: inline-block;
+    border: 1px solid white;
+}
+.four{
+    width: 32%;
+    height: 200px;
+    background-color: blue;
+    display: inline-block;
+    border: 1px solid white;
+}
+}
+@media screen and (max-width:576px){
+   .main{
+   
+    width: 100%;
+    /* position: relative; */
+   }
+    .one{
+        width: 49%;
+        height: 200px;
+        background-color: blue;
+        
+        border: 1px solid white;
+    
+    }
+    .two{
+        width: 49%;
+        height: 200px;
+        background-color: blue;
+       display: inline-block;
+       /* display: flex; */
+        border: 1px solid white;
+    }
+    .three{
+        width: 49%;
+        height: 200px;
+        background-color: blue;
+         display: inline-block;
+    }
+    .four{
+        width: 49%;
+        height: 200px;
+        background-color: blue;
+        
+        border: 1px solid white;
+          /* background-color: red; */
+         display: inline-block;
+    
+    }
+}
+@media screen and (max-width:574px){
+   .main{
+   
+    width: 100%;
+   }
+    .one{
+        width: 100%;
+        height: 200px;
+        background-color: blue;
+        
+        border: 1px solid white;
+    
+    }
+    .two{
+        width: 100%;
+        height: 200px;
+        background-color: blue;
+       display: inline-block;
+        border: 1px solid white;
+    }
+    .three{
+        width: 100%;
+        height: 200px;
+        background-color: blue;
+         display: inline-block;
+    }
+    .four{
+        width: 100%;
+        height: 200px;
+        background-color: blue;
+        
+        border: 1px solid white;
+         display: inline-block;
+    
+    }
+}

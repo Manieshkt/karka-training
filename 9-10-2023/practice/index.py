@@ -1,0 +1,11 @@
+# print statement
+# print("Hello world")
+# print("maniesh")
+# print(100)
+# print("hello"+"world")
+# print("5"+"7")
+# print(5+7)
+# print("5+7")
+# print("5+7")
+# print("5"+7)
+print(4+2)

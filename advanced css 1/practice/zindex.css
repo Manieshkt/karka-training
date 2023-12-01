@@ -1,0 +1,23 @@
+.one{
+    height: 300px;
+    width: 500px;
+    background-color: aquamarine;
+    border: 5px solid black;
+    position: relative;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    
+}
+.two{
+    background-color: gray;
+}
+.three{
+    background-color: rgb(241, 131, 131);
+    position: absolute;
+    z-index: -1;
+}
+.four{
+    background-color: violet;
+}

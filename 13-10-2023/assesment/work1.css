@@ -1,0 +1,172 @@
+.container{
+    width: 100%;
+}
+.body{
+    width: 100%;
+    background-color: black;
+    height: 60px;
+}
+.bloom{
+    width: 50%;
+    color: white;
+    padding-left: 70px;
+    display: inline-block;
+}
+.home{
+    display: inline-block;
+    color: white;
+    margin-right: 30px;
+}
+.about{
+    display: inline-block;
+    color: white;
+    margin-right: 30px;
+}
+.service{
+    display: inline-block;
+    color: white;
+    margin-right: 30px;
+}
+.portfolio{
+    display: inline-block;
+    color: white;
+    margin-right: 30px;
+}
+.contact{
+    display: inline-block;
+    color: white;
+    margin-right: 30px;
+}
+
+.bodya{
+    width: 60%;
+    padding-left: 70px;
+    display: inline-block;
+    padding-bottom: 50px;
+    background-color: white;
+}
+.text{
+    padding-top: 30px;
+    width: 40%;
+}
+.texta{
+    padding-top: 10px;
+    width: 40%;
+}
+.textb{
+    padding-top: 10px;
+    width: 50%;
+}
+.learn{
+    padding-top: 40px;
+    
+}
+.image{
+    display: inline-block;
+    max-width: 30%;
+}
+.heading{
+    background-color: white;
+    padding-left: 70px;}
+.bodyb{
+    width: 100%;
+    background-color: white;
+}
+.blank{
+    background-color: black;
+    border-left: 70px solid white;
+    height: 150px;
+    width: 25%;
+    display: inline-block;
+}
+.blanka{
+    display: inline-block;
+    width: 25%;
+    margin-left: 30px;
+    background-color: black;
+    height: 150px;
+}
+.blankb{
+    display: inline-block;
+    width: 25%;
+    margin-left: 30px;
+    background-color: black;
+    height: 150px;
+}
+.bodyc{
+    padding-top: 10px;
+    width: 100%;
+}
+.suba{
+    display: inline-block;
+    padding-bottom: 20px;
+    border-left: 70px solid white;
+}
+.subb{
+    display: inline-block;
+    margin-left: 190px;
+    padding-bottom: 20px;
+}
+.subc{
+    display: inline-block;
+    margin-left: 190px;
+    padding-bottom: 20px;
+}
+.bodyd{
+    width: 100%;
+}
+.contenta{
+    display: inline-block;
+    width: 25%;
+    border-left: 70px solid white;
+}
+.contentb{
+    display: inline-block;
+    width: 25%;
+    margin-left: 30px;
+}
+.contentc{
+    display: inline-block;
+    width: 25%;
+    margin-left: 30px;
+}
+.bodye{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.learna{
+    padding-top: 20px;
+    display: inline-block;
+    width: 25%;
+    border-left: 70px solid white;
+}
+.learnb{
+    display: inline-block;
+    margin-left: 27px;
+    width: 25%;
+}
+.learnc{
+    display: inline-block;
+    margin-left: 27px;
+    width: 25%;
+
+}
+.bottom{
+    background-color: black;
+    padding-left: 70px;
+}
+.posts{
+    color: white;
+    display: inline-block;
+}
+.abouta{
+    display: inline-block;
+    color: white;
+    margin-left: 250px;
+}
+.stay{
+    display: inline-block;
+    color: white;
+    margin-left: 350px;
+}
+

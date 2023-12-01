@@ -1,0 +1,95 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(46, 134, 134);
+    background-image: url("./depositphotos_449081274-stock-photo-surprised-kid-glasses-sitting-crossed.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#one{
+    border-radius: 10px;
+    margin-left: 27px;
+    width: 400px;
+    border: none transparent;
+    outline: none;
+    height: 20px;
+}
+#two{
+    border-radius: 10px;
+    width: 400px;
+    border: none transparent;
+    outline: none;
+    height: 20px;
+}
+#tone{
+    margin-left: 20px;
+}
+#ttwo{
+    margin-left: 20px;
+}
+.picture{
+    height: 200px;
+    margin-left: 20px ;
+    width: 60%;
+}
+.book{
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    font-size: xx-large;
+    color: red;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.selected{
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    font-size: xx-large;
+    color: green;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.total{
+    border: 2px solid black;
+    display: inline-grid;
+    grid-template-columns: repeat(3,2fr);
+    row-gap: 20px;
+    column-gap: 20px;
+
+}
+#sub{
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: rgb(245, 77, 77);
+    font-size: 30px;
+    border: 2px solid black;
+    margin-top: 50px;
+   }
+
+.hi{
+    display: inline-block;
+    width: 50%;
+   
+}
+.pic{
+    display: inline-block;
+    width: 49%;
+    height: 700px;
+}
+#pica{
+    height: 250px;
+}
+#picb{
+    height: 250px;
+}
+.info{
+    background-image: url("./download\ \(8\).jpg");
+    background-repeat: no-repeat;
+    width: 100% !important; 
+    /* display: inline; */
+}

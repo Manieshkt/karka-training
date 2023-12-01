@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <p id="para1">hi</p>
+    <p id="para2">bye</p>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+</body>
+<script>
+       $(document).ready(function(){
+        $("#hide").click(function(){
+            $("#para1").hide()
+            $("#para2").hide()
+        })
+        $("#show").dblclick(function(){
+            $("#para2").show()
+        })
+       })  
+
+    // $(document).ready(function(){
+    //     $("#hide").mouseenter(function(){
+    //         $("#para1").hide()
+    //         $("#para2").hide()
+    //     })
+    //     $("#show").mouseleave(function(){
+    //         $("#para2").show()
+    //         $("#para1").show()
+    //     })
+    //    })  
+
+    // $(document).ready(function(){
+    //     $("#hide").mousedown(function(){
+    //         $("#para1").hide()
+    //         $("#para2").hide()
+    //     })
+    //     $("#show").mouseup(function(){
+    //         $("#para2").show()
+    //     })
+    //    })  
+
+</script>
+</html>

@@ -1,0 +1,94 @@
+
+.main{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.left{
+    display: flex;
+    width: 45%;
+    flex-wrap: wrap;
+}
+.head{
+    background-color: aqua;
+    width: 100%;
+    height: 40px;
+}
+.one{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 190px;
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+}
+.two{
+    background-color: yellow;
+    height: 100px;
+    width: 60%;
+}
+.three{
+    background-color: yellowgreen;
+    height: 50px;
+    width: 60%;
+}
+/* .four{
+    width: 50%;
+} */
+.four{
+    background-color: blue;
+    width: 38%;
+    height: 165px;
+}
+
+.right{
+    display: flex;
+    width: 50%;
+    /* flex-direction: column; */
+    height: 220px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 0;
+    top: 0;
+    flex-direction: row;
+    /* position: relative; */
+    /* left: 700px; */
+}
+.first{
+    background-color: yellowgreen;
+    width: 49%;
+    height: 60px;
+}
+.second{
+    background-color: blue;
+    width: 49%;
+    height: 70px;
+}
+.third{
+    background-color: blue;
+    width: 49%;
+    height: 40px;
+}
+.fourth{
+    background-color: yellow;
+    width: 49%;
+    height: 40px;
+}
+.fifth{
+    background-color: yellow;
+    width: 49%;
+    height: 40px;
+}
+.sixth{
+    background-color: yellowgreen;
+    width: 49%;
+    height: 40px;
+}
+.seventh{
+    background-color: aqua;
+    width: 100%;
+    height: 50px;
+   
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tamil=parseInt(prompt("Enter your tamil mark"))
+        let english=parseInt(prompt("Enter your english mark"))
+        let maths=parseInt(prompt("Enter your maths mark"))
+        let science=parseInt(prompt("Enter your science mark"))
+        let social=parseInt(prompt("Enter your social mark"))
+        let total=tamil+english+maths+science+social;
+        let mark=total
+        alert(mark)
+        if(mark>=480){
+            alert ("you are selected for maths and computer group")
+        }
+        else if(mark>=450){
+            alert("you are selected for computer group ")
+        }
+        else if(mark>=400){
+            alert("you are selected for computer and science group ")
+        }
+        else if(mark>=300){
+            alert("you are selected for accounts group")
+        }
+        else{
+            alert("you are not selected")
+        }
+    </script>
+</body>
+</html>

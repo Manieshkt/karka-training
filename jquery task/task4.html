@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <input id="one"/>
+    <input id="two" />
+    <button id="three">submit</button>
+    <p id="four"></p>
+    <p id="five"></p>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#three").click(function(){
+            $("#four").text("name:"+$("#one").val())
+            $("#five").text("password:"+$("#two").val())
+        })
+    })
+</script>
+</html>

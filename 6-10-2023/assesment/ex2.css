@@ -1,0 +1,43 @@
+.header{
+    text-align: center;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    height: 50px;
+    width: 100%;
+}
+.container{
+    border: 2px solid black;
+}
+.nav{
+    text-align: center;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    height: 50px;
+    width: 100%;
+}
+.body{
+    width: 20%;
+}
+.index{
+    border-right: 2px solid black;
+    height: 200px;
+    display: inline-block;
+    width:30% ;
+    border-bottom: 2px solid black;
+}
+.right{
+    text-align: center;
+    display: inline-block;
+    border-bottom: 2px solid black;
+    width: 60%;
+    height: 200px;
+    
+}
+.footer{
+    border-top: 2px solid black;
+    text-align: center;
+    height: 40px;
+}

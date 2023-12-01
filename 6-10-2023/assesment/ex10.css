@@ -1,0 +1,85 @@
+.container{
+    width: 100%;
+}
+.logo{
+    background-color: grey;
+    text-align: center;
+    height: 50px;
+    justify-content: center;
+}
+.body{
+    display: inline-block;
+    height: 30px;
+    margin-top: 20px;
+    background-color: grey;
+    width: 100%;
+    text-align: center;
+}
+.home{
+    display: inline-block;
+    padding-left: 70px;
+    color: blue;
+}
+.products{
+    display: inline-block;
+    padding-left: 20px;
+    color: blue;
+}
+.services{
+    display: inline-block;
+    padding-left: 20px;
+    color: blue;
+}
+.about{
+    display: inline-block;
+    padding-left: 20px;
+    color: blue;
+}
+.contact{
+    display: inline-block;
+    padding-left: 20px;
+    color: blue;
+}
+.feature{
+    text-align: center;
+    background-color: grey;
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+}
+.column{
+    width: 100%;
+    display: inline-block;
+    margin-top: 10px;
+}
+.column-a{
+    display: inline-block;
+    text-align: center;
+    background-color: grey;
+    width: 33%;
+    height: 150px;
+}
+.column-b{
+    display: inline-block;
+    text-align: center;
+    background-color: grey;
+    margin-left: 20px;
+    width: 33%;
+    height: 150px;
+}
+.column-c{
+    display: inline-block;
+    text-align: center;
+    background-color: grey;
+    margin-left: 20px;
+    width: 25%;
+    height: 150px;
+    padding-right: 42px;
+}
+.copyright{
+    background-color: grey;
+    text-align: center;
+    margin-top: 20px;
+    height: 40px;
+    justify-content: center;
+}

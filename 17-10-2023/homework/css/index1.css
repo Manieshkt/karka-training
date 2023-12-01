@@ -1,0 +1,11 @@
+body{
+    font-family: 'Shadows Into Light', cursive;
+}
+.background{
+    background-image: url('./0952e9d8c44d9e1fcc1e9b6da06ca49c.jpg');
+    background-repeat: no-repeat, repeat;
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center; /* Center the image */
+    height: 500px;
+    font-size: 100px;
+}

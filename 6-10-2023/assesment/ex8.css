@@ -1,0 +1,48 @@
+.container{
+    border-top: 2px solid black;
+    width: 700px;
+}
+.head{
+    text-align: center;
+    background-color: pink;
+    height: 60px;
+    width: 700px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.nav{
+    text-align: center;
+    background-color: violet;
+    height: 40px;
+    width: 700px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.body{
+    width: 100%;
+}
+.left{
+    text-align: center;
+    display: inline-block;
+    background-color: purple;
+    height: 90px;
+    width: 200px;
+    border-left: 2px solid black;
+}
+.main{
+    text-align: center;
+    display: inline-block;
+    background-color: white;
+    height: 90px;
+    width: 496px;
+    border-right: 2px solid black;
+}
+.foot{
+    text-align: center;
+    background-color: blueviolet;
+    height: 40px;
+    width: 700px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}

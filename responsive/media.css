@@ -1,0 +1,60 @@
+/* .one {
+    width: 50%;
+    height: 200px;
+    background-color: red;
+}
+
+@media screen and (max-width:600px) {
+    .one {
+        width: 50%;
+    height: 200px;
+        background-color: blue;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .one {
+        width: 50%;
+        height: 200px;
+        background-color: orange;
+    }
+} */
+
+
+
+.total{
+    display: flex;
+}
+.one{
+    background-color: red;
+    height: 300px;
+    width: 20%;
+   }
+   .two{
+    background-color: blue;
+    height: 300px;
+    width: 20%;
+   }
+   .three{
+    background-color: pink;
+    height: 300px;
+    width: 20%;
+   }
+   .four{
+    background-color: blue;
+    height: 300px;
+    width: 20%;
+   }
+   .five{
+    background-color: violet;
+    height: 300px;
+    width: 20%;
+   }
+
+@media screen and (max-width:800px){
+    
+.total{
+     flex-wrap: wrap;
+}
+
+}

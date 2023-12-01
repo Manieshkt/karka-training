@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="one.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="hlo"><h1 style="text-align: center;">Book My Show</h1></div>
+    <div class="hi" style="width: 50%;">
+    <div class="container " style="width: 80%;height: 600px;">
+    <p id="tone">Name: <input id="one"/></p>
+    <p id="ttwo">No of seats:<input id="two"/></p>
+   <p><img id="picture" src="./download (7).jpg" ></p>
+   <div class="total">
+    <!-- <div class="three"  > -->
+        <p class="book four">1</p>
+        <p class="book five">2</p>
+        <p class="book six">3</p>
+        <p class="book seven">4</p>
+    <!-- </div> -->
+    <div class="eight"  >
+        <p class="book nine">5</p>
+        <p class="book ten">6</p>
+        <p class="book eleven">7</p>
+        <p class="book twelve">8</p>
+    </div>
+    <div class="onea"  >
+        <p id="twoa">9</p>
+        <p id="threea">10</p>
+        <p id="foura">11</p>
+        <p id="fivea">12</p>
+    </div>
+    <div class="sixa"  >
+        <p id="sevena">13</p>
+        <p id="eighta">14</p>
+        <p id="ninea">15</p>
+        <p id="tena">16</p>
+    </div>
+</div>
+
+    <button id="sub" >submit</button>
+    <p id="thirteen" style="margin-left: 20px;"></p>
+</div>
+</div>
+<div class="pic " >
+    <p><h1>Sugesstions</h1></p>
+    <img id="pica" src="./logan.jpg" />
+    <img id="picb" src="./trash.jpg" />
+    <p><h1>Movies To Watch</h1></p>
+    <img src="./download (7).jpg" >
+    <img src="./download (11).jpg">
+</div>
+</div>
+<div class="info" style="width: 100%;margin-left: 20px;">
+    <ul>
+        <li>About</li>
+        <li>Info</li>
+        <li>Contact</li>
+    </ul>
+</div>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#four").click(function(){
+            $("#four").css("background","green")
+        })
+        $("#four").dblclick(function(){
+            $("#four").css("background","white")
+        })
+        $("#five").click(function(){
+            $("#five").css("background","green")
+        })
+        $("#five").dblclick(function(){
+            $("#five").css("background","white")
+        })
+        $("#six").click(function(){
+            $("#six").css("background","green")
+        })
+        $("#six").dblclick(function(){
+            $("#six").css("background","white")
+        })
+        $("#seven").click(function(){
+            $("#seven").css("background","green")
+        })
+        $("#seven").dblclick(function(){
+            $("#seven").css("background","white")
+        })
+        $("#nine").click(function(){
+            $("#nine").css("background","green")
+        })
+        $("#nine").dblclick(function(){
+            $("#nine").css("background","white")
+        })
+        $("#ten").click(function(){
+            $("#ten").css("background","green")
+        })
+        $("#ten").dblclick(function(){
+            $("#ten").css("background","white")
+        })
+        $("#eleven").click(function(){
+            $("#eleven").css("background","green")
+        })
+        $("#eleven").dblclick(function(){
+            $("#eleven").css("background","white")
+        })
+        $("#twelve").click(function(){
+            $("#twelve").css("background","green")
+        })
+        $("#twelve").dblclick(function(){
+            $("#twelve").css("background","white")
+        })
+        $("#twoa").click(function(){
+            $("#twoa").css("background","green")
+        })
+        $("#twoa").dblclick(function(){
+            $("#twoa").css("background","white")
+        })
+        $("#threea").click(function(){
+            $("#threea").css("background","green")
+        })
+        $("#threea").dblclick(function(){
+            $("#threea").css("background","white")
+        })
+        $("#foura").click(function(){
+            $("#foura").css("background","green")
+        })
+        $("#foura").dblclick(function(){
+            $("#foura").css("background","white")
+        })
+        $("#fivea").click(function(){
+            $("#fivea").css("background","green")
+        })
+        $("#fivea").dblclick(function(){
+            $("#fivea").css("background","white")
+        })
+        $("#sevena").click(function(){
+            $("#sevena").css("background","green")
+        })
+        $("#sevena").dblclick(function(){
+            $("#sevena").css("background","white")
+        })
+        $("#eighta").click(function(){
+            $("#eighta").css("background","green")
+        })
+        $("#eighta").dblclick(function(){
+            $("#eighta").css("background","white")
+        })
+        $("#ninea").click(function(){
+            $("#ninea").css("background","green")
+        })
+        $("#ninea").dblclick(function(){
+            $("#ninea").css("background","white")
+        })
+        $("#tena").click(function(){
+            $("#tena").css("background","green")
+        })
+        $("#tena").dblclick(function(){
+            $("#tena").css("background","white")
+        })
+        $("button").click(function(){
+            $("#thirteen").text($("#one").val()+" selected "+$("#two").val()+" seats ")
+        })
+       $(".total").click(function(){
+        // let a=[$(".total").innertext()]
+        let num=$("#two").val()
+        let b=[$("#four").text()]
+        // for (let i=0;i<=b.length;i++){        
+            console.log(b)
+    //     if (i<num){
+    //     $(this).css("background","red")
+    //         }
+        // }
+        let c=[$("#five").text()]
+        console.log(c)
+        let d=[$("#six").text()]
+        console.log(d)
+        let e=[$("#seven").text()]
+        console.log(e)
+        let f=[$("#nine").text()]
+        console.log(f)
+
+       })
+    })
+</script>
+</html>

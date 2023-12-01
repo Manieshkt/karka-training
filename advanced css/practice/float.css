@@ -1,0 +1,53 @@
+.one{
+    height: 500px;
+    width: 100%;
+    background-color: aquamarine;
+    border: 5px solid black;
+    
+    
+}
+.box{
+    height: 100px;
+    width: 100px;
+    /* clear: left; */
+}
+.two{
+    background-color: red;
+    float: left;
+    
+}
+.three{
+    background-color:violet;
+    float: right;
+    
+}
+.four{
+    background-color: pink;
+    float: right;
+   /* z-index: 1; */
+    /* clear: left; */
+}
+.five{
+    background-color: blue;
+    float: right;
+}
+.six{
+    background-color: green;
+    /* z-index: 1; */
+    float: right;
+}
+img{
+    float: left;
+}
+p{
+    float: right;
+    width: 40%;
+    height: 130px;
+}
+.para{
+    width: 60%;
+    /* clear: left; */
+}
+/* .clear{
+    clear: both;
+} */

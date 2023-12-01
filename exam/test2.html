@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./test2.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main">
+        <!-- <button>submit</button> -->
+        <i class="button fa fa-bars" style="font-size: xxx-large;" aria-hidden="true"></i>
+        <div class="nav">
+           
+            <div class="one">menu</div>
+            <div class="two">home</div>
+            <div class="three">about</div>
+            <div class="four">news</div>
+            <div class="five">contact</div>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        $(".button").click(function(){
+            $(".nav").show()
+        })
+    })
+</script>
+</html>

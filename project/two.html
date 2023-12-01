@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="two.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="hlo"><h1 style="text-align: center;">Book My Show</h1></div>
+    <div class="hi" style="width: 50%;">
+    <div class="container " style="width: 80%;height: 600px;">
+    <p id="tone">Name: <input id="one"/></p>
+    <p id="ttwo">No of seats:<input id="two"/></p>
+   <p><img id="picture" src="./download (7).jpg" ></p>
+   <div class="total seats">
+    <div class="book one" >1</div>
+    <div class="book two">2</div>
+    <div class="book three">3</div>
+    <div class="book four">4</div>
+    <div class="book five">5</div>
+    <div class="book six">6</div>
+    <div class="book seven">7</div>
+    <div class="book eight">8</div>
+    <div class="book nine">9</div>
+
+    </div>
+    
+
+
+</div>
+<button onclick="hi()" id="sub" >submit</button>
+<p id="thirteen" style="margin-left: 20px;"></p>
+<p id="fourteen" style="margin-left: 20px;"></p>
+</div>
+</div>
+<div class="pic " >
+<p><h1>Sugesstions</h1></p>
+<img id="pica" src="./logan.jpg" />
+<img id="picb" src="./trash.jpg" />
+<p><h1>Movies To Watch</h1></p>
+<img src="./download (7).jpg" >
+<img src="./download (11).jpg">
+</div>
+</div>
+<div class="info" style="width: 100%;margin-left: 20px;">
+<ul>
+    <li>About</li>
+    <li>Info</li>
+    <li>Contact</li>
+</ul>
+</div>
+</body>
+<script>
+    // $(document).ready(function(){
+    //     $(".book").click(function(){
+    //         $(this).toggleClass('selected')
+    //     })
+    //     $("button").click(function(){
+    //         var selectedSeats=$('.book.selected').map(function(){
+    //            return $(this).text()
+    //         }).get()
+    //         $("#thirteen").text("The selected seat numbers are "+selectedSeats)
+    //     })
+       
+
+$(document).ready(function(){
+    var seats = 0
+    
+    $(".book").click(function(){
+        $(this).toggleClass("selected")
+        if($(".book.selected").length < seats || $(this).hasClass("selected")) {
+            $(this).css("background","green")
+        }
+    $(".book").dblclick(function(){
+        $(this).css("background","white")
+    })
+    })
+    $("button").click(function(){
+        $("#thirteen").text($("#one").val()+" selected "+$("#two").val()+" seats ")
+        var selectedSeats = $(".book.selected").map(function(){
+            return $(this).text()
+        }).get()
+        if (selectedSeats.length !== seats){
+            alert("select correct number of seats")
+        } else {
+            $("#fourteen").text("The selected seat numbers are " + selectedSeats)
+        }
+    })
+    $("#two").on("input", function(){
+        seats = parseInt($(this).val())
+        $(".book.selected").removeClass("selected")
+    })
+})
+
+    
+    
+
+</script>
+</html>

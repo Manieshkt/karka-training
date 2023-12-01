@@ -1,0 +1,110 @@
+.main{
+    position: relative;
+}
+.nav{
+  background-color: aquamarine;
+  position: absolute;
+  width: 100%;
+  height: 40px;
+}
+.one{
+    position: absolute;
+    right: 100;
+}
+.two{
+    position: absolute;
+    left: 100px;
+}
+.three{
+    position: absolute;
+    left: 200px;
+}
+.four{
+    position: absolute;
+    left: 300px;
+}
+.five{
+    position: absolute;
+    left: 400px;
+}
+.button{
+    display: none !important;
+}
+
+@media screen and (max-width:992px){
+    .main{
+        position: relative;
+    }
+    .nav{
+      background-color: aquamarine;
+      position: absolute;
+      width: 100%;
+      height: 40px;
+    }
+    .one{
+        position: absolute;
+        right: 100;
+    }
+    .two{
+        position: absolute;
+        left: 100px;
+    }
+    .three{
+        position: absolute;
+        left: 200px;
+    }
+    .four{
+        position: absolute;
+        left: 300px;
+    }
+    .five{
+        position: absolute;
+        left: 400px;
+    }
+    .button{
+       display: none !important;
+    }
+}
+
+
+@media screen and (max-width:552px){
+    .main{
+        position: relative;
+        background-color: aquamarine;
+    }
+    .nav{
+     
+      position: relative;
+      width: 100%;
+      height: 600px;
+      display: none;
+    }
+    .one{
+        position: relative;
+        top: 10px;
+        
+    }
+    .two{
+        position: relative;
+        top: 20px;
+        left: 0;
+    }
+    .three{
+        position: relative;
+        top: 30px;
+        left: 0;
+    }
+    .four{
+        position: relative;
+        top: 40px;
+        left: 0;
+    }
+    .five{
+        position: relative;
+        top: 50px;
+        left: 0;
+    }
+    .button{
+       display: block !important;
+    }
+}

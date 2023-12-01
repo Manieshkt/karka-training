@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <p id="one">karka</p>
+    <p id="two">maniesh</p>
+    <ul>
+        <li>1</li>
+    </ul>
+    <button id="three">submit</button>
+    <button id="four">click</button>
+    <button id="five">clicka</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#three").click(function(){
+            $("#one").append("academy")
+        })
+        $("#four").click(function(){
+            $("#two").prepend("hi")
+        })
+        $("#five").click(function(){
+            $("ul").append("<li>2</li>")
+        })
+    })
+</script>
+</html>

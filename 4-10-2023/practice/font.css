@@ -1,0 +1,20 @@
+.para{
+    color: red;
+}
+#para1{
+    color:green;
+}
+/* *{
+    background-color: brown;
+} */
+#div{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    line-height: 1.4;
+    text-decoration: underline;
+}
+.hi{
+    text-align: center;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <p id="three"></p>
+<p id="four"></p>
+    <p id="one" style="height: 100px;width: 100px;background-color: red;"></p>
+    <button id="two">click</button>
+   
+</body>
+<script>
+    $(document).ready(function(){
+        $("#two").click(function(){
+            $("#one").hide("slow",function(){
+                $("#three").html("<h1>hi</h1>")
+                $("#four").html("<h2>name</h2>")
+            })
+        })
+    })
+</script>
+</html>

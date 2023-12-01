@@ -1,0 +1,59 @@
+.container{
+    background-color: BLUE;
+    height: 100%;
+    padding: 10px;
+}
+.head{
+    background-color: aqua;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+}
+.body{
+    height: 80%;
+    display: flex;
+}
+.menu{
+    background-color: aqua;
+    width: 250px;
+    height: 320px;
+    padding: 30px;
+    margin: 10px;
+}
+.body-a{
+    width: 700px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.body-b{
+    display: flex;
+    height: 300px;
+}
+.main{
+    display: flex;
+    background-color: aqua;
+    height: 160px;
+    padding: 30px;
+    margin: 10px;
+    width: 350px;
+}
+.right{
+    display: flex;
+    background-color: aqua;
+    height: 160px;
+    padding: 30px;
+    margin: 10px;
+    width: 260px;
+}
+.foot{
+    background-color: aqua;
+    height: 300px;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+}
