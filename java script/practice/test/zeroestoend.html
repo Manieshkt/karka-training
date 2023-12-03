@@ -9,11 +9,13 @@
     
 </body>
 <script>
-     let sum=[2,4,5,7]
-     let A=0
-     for (let i=0;i<sum.length;i++){
-        A+=sum[i]
-     }
-     console.log(A)
+    let a=[1,2,0,3,0,4]
+    for (let i=0;i<=a.length-1;i++){
+        if(a[i]==0){
+            a.splice(i,1)
+            a.push(0)
+        }
+    }
+    console.log(a)
 </script>
 </html>

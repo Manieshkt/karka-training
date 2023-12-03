@@ -9,14 +9,14 @@
     
 </body>
 <script>
-    // let A=[10,12,1,2,3,4,5]
-    // for (let i=A.length;i>=0;i--){
-    //     console.log(A[i])
-    // }
-
-    let A="MANIESH"
-    for (let i=A.length;i>=0;i--){
-        console.log(A[i])
+    let a=[1,2,3,1,4,2,5]
+    for (let i=0;i<=a.length;i++){
+        for (let j=i+1;j<=a.length;j++){
+        if (a[i]==a[j]){
+            a.splice(j,1)
+        }
     }
+}
+    console.log(a)
 </script>
 </html>
