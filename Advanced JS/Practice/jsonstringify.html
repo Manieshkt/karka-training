@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    // let text = { name: "John", age: 30, city: "New York" }
+    // let string = JSON.stringify(text)
+    // document.getElementById("demo").innerHTML = string
+
+    // let text = ["John", "Peter", "Sally", "Jane"]
+    // let string = JSON.stringify(text)
+    // document.getElementById("demo").innerHTML = string
+
+    // let text = { name: "John", age: 31, city: "New York" }
+    // let string = JSON.stringify(text)
+    // localStorage.setItem("one", string)
+    // let get = localStorage.getItem("one")
+    // let stringy = JSON.parse(get)
+    // document.getElementById("demo").innerHTML = stringy.name
+
+    // let obj = { name: "John", today: new Date(), city: "New York" }
+    // let string = JSON.stringify(obj)
+    // document.getElementById("demo").innerHTML = string
+
+    let obj = { name: "John", age: function () { return 30; }, city: "New York" }
+    obj.age = obj.age.toString()
+    let string = JSON.stringify(obj)
+    document.getElementById("demo").innerHTML = string
+</script>
+</html>

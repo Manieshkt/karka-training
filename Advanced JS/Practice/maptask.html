@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table style="border: 2px solid black;">
+        <tr style="border: 2px solid black;">
+            <th style="border: 2px solid black;">S.No</th>
+            <th style="border: 2px solid black;">Name</th>
+            <th style="border: 2px solid black;">Age</th>
+        </tr>
+        <tr>
+            <td id="serialno_1" style="border: 2px solid black;"></td>
+            <td id="name1" style="border: 2px solid black;"></td>
+            <td id="age1" style="border: 2px solid black;"></td>
+        </tr>
+    </table>
+</body>
+<script>
+    let people = [
+        { name: "ajay", age: 22 },
+        { name: "jemil", age: 23 },
+        { name: "mahathi", age: 17 },
+
+    ]
+    let A = document.getElementById("name1").innerHTML = people.map(person => person.name).join("<br>")
+    let B = document.getElementById("age1").innerHTML = people.map(person => person.age).join("<br>")
+    let C = document.getElementById("serialno_1").innerHTML = people.map((person, b) => `${b + 1}`).join("<br>")
+</script>
+
+</html>

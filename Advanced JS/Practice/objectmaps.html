@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // let fruits=new Map([
+    //     ["apples",500],
+    //     ["banana",300],
+    //     ["oranges",200]
+    // ])
+    // console.log(fruits)
+   
+    // b=fruits.set("apples",200)
+    // console.log(b)
+
+    // c=fruits.get("banana")
+    // console.log(c)
+
+    // fruits.clear()
+    // console.log(fruits)
+
+let people=[
+    {name:"ajay",age:22},
+    {name:"jemil",age:23},
+    {name:"mahathi",age:17},
+]
+  let A=people.map((person,b)=>({...person,
+            isAdult:person.age>=18,
+            index:b
+  }))
+  console.log(A)
+</script>
+</html>

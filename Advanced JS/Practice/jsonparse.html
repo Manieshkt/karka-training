@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    // let text = '{"name":"John", "age":30, "city":"New York"}'
+    // let object=JSON.parse(text)
+    // document.getElementById("demo").innerHTML=object.name+" , "+object.city
+
+    // let car = '["Ford", "BMW", "Audi", "Fiat"]'
+    // let object=JSON.parse(car)
+    // document.getElementById("demo").innerHTML=object[0]
+
+    // let details='{"name":"John", "birth":"1998-11-14", "city":"New York"}'
+    // let personal=JSON.parse(details)
+    // personal.birth=new Date(personal.birth)
+    // document.getElementById("demo").innerHTML=personal.name+" , "+personal.birth
+
+    // let text = '{"name":"John", "birth":"1986-12-14", "city":"New York"}'
+    // let object=JSON.parse(text,function(key,a){
+    //     if (key=="birth"){
+    //         return new Date(a)
+    //     }
+    //     else {
+    //         return (a)
+    //     }
+    // })
+    // document.getElementById("demo").innerHTML = object.name + ", " + object.birth;    
+
+    // let text = '{"name":"John", "age":"function() {return 30;}", "city":"New York"}'
+    //     let object=JSON.parse(text)
+    //     object.age=eval("(" + object.age + ")")
+    //     document.getElementById("demo").innerHTML = object.name + ", " + object.age()
+
+        let a="10"
+        let b="5"
+        let c=JSON.parse(a)+JSON.parse(b)
+        console.log(c)
+
+</script>
+</html>

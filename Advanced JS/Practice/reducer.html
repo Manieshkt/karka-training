@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // let num=[1,2,3,4,5]
+    // let sum=num.reduce((accumulator,currentvalue)=>(accumulator+currentvalue),0)
+    // console.log(sum)
+
+    // let num=[1,2,3,4,5]
+    // let sum=num.reduce((accumulator,currentvalue)
+    // {
+    //     return (accumulator+currentvalue)
+    //     },0)
+    //     console.log(sum)
+
+    // let num=[[1,2],[3,4],[5,6]]
+    // let sum=[...num[0],...num[1],...num[2]]
+    //     let sum=num.reduce((a,b)=>[...a,...b],[])
+    // console.log(sum)  
+
+    let num={
+        a:1,
+        b:2,
+        c:3
+    }
+        let sum=Object.values(num).reduce((a,b)=>a+b,0)
+        console.log(sum)  
+</script>
+</html>

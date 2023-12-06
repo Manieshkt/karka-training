@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <div id="demoa"></div>
+</body>
+<script>
+    let A=prompt("Enter your Name")
+    let B=setInterval(hi,2000)
+    function hi(){
+        document.getElementById("demoa").innerHTML += " DrinK water <br> "
+    }
+
+    let C=setTimeout(hlo,1000)
+    function hlo(){
+        document.getElementById("demo").innerHTML =A
+    }
+</script>
+</html>
