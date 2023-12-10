@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <div id="hia"></div><br>
+    <button>Log out</button>
+</body>
+<script>
+    $(document).ready(function(){
+        let oh=localStorage.getItem("createuser")
+        let uh=localStorage.getItem("createpass")
+        $("#hia").text(oh + " Your password is " +uh)
+        $("button").click(function(){
+            location.href="localstoragetask.html"
+        })
+    })
+</script>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<style>
+    table,td,tr{
+        border: 2px solid black;
+        text-align: center;
+    }
+</style>
+<body>
+    <div id="demo"></div>
+    <div id="demoa"></div>
+</body>
+<script>
+    let apiURL='https://reqres.in/api/users?page=2'
+    let fetchData=fetch(apiURL)
+    fetchData.then(response=>{
+        if(!response.ok){
+            throw new Error('HTTP Error!Status:${response.status}')
+        }
+        return response.json()
+    })
+    .then(data=>{
+        console.log('Data:',data)
+        let table=
+   
+   `<table>
+            <tr>
+                <td>S.no</td>
+                <td>ID</td>
+                <td>Email</td>
+                <td>Name</td>
+                <td>Avatar</td>
+            </tr>
+            ${data.data.map((content,index)=>
+                `
+
+                <tr>
+                <td class="hi">${index+1}</td>
+                <td>${content.id}</td>
+                <td>${content.email}</td>
+                <td>${content.first_name}${content.last_name}</td>
+                <td><img src="${content.avatar}"/></td>
+                <td><button >DELETE</button></td>
+            </tr>
+                `).join('')
+            }
+      </table>`
+     $(document).ready (function(){
+        $("button").click(function(){
+            $(this).parents("tr").hide()
+        })
+        let row=$(".hi").map(function(){
+            if (data.length>0)
+            var rowc = document.getElementsByClassName("hi").rows.length;  
+            for (let i=1;i<=6;i++){
+            row.innerHTML=i
+            }
+        })
+     })
+      document.getElementById("demo").innerHTML=table
+    })
+ 
+    .catch(err=>{
+        console.error("Error:",err.message)
+    })
+</script>
+<script>
+ 
+</script>
+</html>

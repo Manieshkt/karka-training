@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1 id="hlo">Registration Page</h1>
+    <b>Name :</b><input id="name" placeholder="Enter your name" style="padding: 5px;"/><br><br>
+    <b>Password :</b><input id="password" placeholder="Enter your password" style="padding: 5px;"/><br><br>
+    <button id="log">Log In</button>
+    <button id="create">Create Account</button>
+    <div id="ggg"></div>
+
+</body>
+<script>
+    $(document).ready(function () {
+        $("#log").click(function () {
+            let getting = localStorage.getItem("createuser")
+            let getting1 = localStorage.getItem("createpass")
+            let obj = { "username": getting, "password": getting1 }
+
+            let array = [{ "username": "maniesh", "password": "dustbin" }]
+            array.push(obj)
+
+            let stringy = JSON.stringify(array)
+            localStorage.setItem("string", stringy)
+            let con = localStorage.getItem("string")
+            let parsy = JSON.parse(con)
+            console.log(parsy)
+
+            localStorage.setItem("existing",array)
+            let already=localStorage.getItem("existing")
+
+            let A = $("#name").val()
+            localStorage.setItem("user", A)
+            let D = localStorage.getItem("user")
+
+            let B = $("#password").val()
+            localStorage.setItem("passlog", B)
+            let E = localStorage.getItem("passlog")
+ 
+            let H= array.map((people)=> {
+                if (people.username === A && people.password === B) {
+                    location.href = "login.html"
+                }
+                if (people.username === A && people.password !== B || people.username !== A && people.password === B) {
+                    alert("username or password is wrong")
+                }
+                if (people.username !== A) {
+                    alert("create an account")
+                }
+            })
+        })
+        $("#create").click(function () {
+            location.href = "createaccount.html"
+        })
+    })
+</script>
+
+</html>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <b>Create user name :</b> <input id="creuse" />
+    <br><br>
+    <b>Create Password:</b> <input id="crepas" /> <br><br>
+    <button id="creacc">Create Account</button>
+</body>
+<script>
+    $(document).ready(function () {
+        $("#creacc").click(function () {
+            let creuse1 = $("#creuse").val()
+            localStorage.setItem("createuser", creuse1)
+            let creuse2 = localStorage.getItem("createuser")
+
+            let crepas1 = $("#crepas").val()
+            localStorage.setItem("createpass", crepas1)
+            let crepas2 = localStorage.getItem("createpass")
+
+            if (creuse1 === "") {
+                alert("user name is empty")
+            }
+            else if (localStorage.getItem("users") && JSON.parse(localStorage.getItem("users")).some((user) => user.username === creuse1)) {
+                alert("Account already exists")
+            }
+            else if (crepas1 === "") {
+                alert("password is empty")
+            }
+            else {
+                let users = JSON.parse(localStorage.getItem("users")) || []
+                users.push({ username: creuse1, password: crepas1 })
+                localStorage.setItem("users", JSON.stringify(users))
+                alert("Account Created")
+                location.href = "login1.html"
+            }
+        })
+
+    })
+</script>
+
+</html>
