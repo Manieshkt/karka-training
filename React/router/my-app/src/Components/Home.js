@@ -6,8 +6,8 @@ export const Home=()=>{
         <div className="Home">
             <div>Home</div>
             <p>React Router is the most popular solution. </p>
-            <Button/>
-            
+            <Button/>           
         </div>
     )
+
 }
