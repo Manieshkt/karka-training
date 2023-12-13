@@ -1,17 +1,19 @@
 import React from "react"
-
-export const Button=(props)=>{
-    let count=props.count
+import { useState } from "react"
+export const Button=()=>{
+    const [count,setCount]=useState(0)
+    // let count=props.count
     const fun=()=>{
-       count=count+1
-       console.log(count)
+        setCount(count+1)
+     console.log(count)
     }
     const fun1=()=>{
-        count=count-1
-        console.log(count)
+        setCount(count-1)
+        // console.log(count)
     }
     return (
         <>
+            <p>{count}</p>
             <button onClick={fun}>+</button>
             <button onClick={fun1}>-</button>
         </>
