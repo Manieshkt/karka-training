@@ -1,0 +1,32 @@
+
+{
+    "data":[{
+      "name":"Cropped stay groovy off white",
+      "images":"./assets/download(9).jpg",
+      "price":"10$",
+      "size":"S",
+      "id":"1"
+  },{
+      "name":"Basic Cactus White t-shirt",
+      "images":"./assets/download(10).jpg",
+      "price":"12$",
+      "size":"M",
+      "id":"2"
+  },
+  {
+    "name":"Black Sweatshirt",
+    "images":"./assets/download (11).jpg",
+    "price":"20$",
+      "size":"M",
+      "id":"3"
+  },
+  {
+    "name":"Black T-shirt",
+    "images":"./assets/download (12).jpg",
+    "price":"25$",
+      "size":"L",
+      "id":"4"
+  
+  }
+  
+  ]}

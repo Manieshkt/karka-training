@@ -8,10 +8,14 @@ export const Home=()=>{
     const location=useLocation()
     console.log(location)
     const [color,hi]=useState("hello")
+  const fun=()=>{
+    hi("hi")
+  }
     return(
         <>
         <p>This is Home Page {ji}</p><p>location : {location.pathname} {color}</p>
-        <button onClick={()=>{hi("hi")}}>Submit</button>
+        <button onClick={fun}>Submit</button>
+       
         </>
     )
 }
