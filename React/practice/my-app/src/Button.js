@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import { Home } from "./Home";
 
-export const Button=()=>{
+export const Button=({you})=>{
     let [count,setCount]=useState(null)
     const fun=()=>{
         setCount("S")
@@ -12,6 +12,13 @@ export const Button=()=>{
     const funb=()=>{
         setCount("L")
     }
+    let [call,calla]=useState(null)
+    const passing=(a)=>{
+       calla(a)
+    }
+    you(call)
+    
+    // console.log(call)
     return(
        <div className="dataa">
         <div className="but">
@@ -20,11 +27,8 @@ export const Button=()=>{
         <button onClick={funb}>L</button>
         </div>
         <div className="datab">
-       <Home addToCart={(item)=>console.log(item)}proppie={count}/>
+       <Home addToCart={(item)=>console.log(item)}proppie={count} proppiea={passing}/>
        </div>
-       {/* <div className="cart">
-       <button ><Cart/></button>
-       </div> */}
 
        </div>
     )
