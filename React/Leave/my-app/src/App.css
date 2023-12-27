@@ -1,7 +1,7 @@
+
 .navigationBar{
   display: flex;
-  justify-content: space-evenly;
-  text-align: center;
+  justify-content: center;
   align-items: center;
   width: 100%;
   background-color: rgb(96, 114, 116);
@@ -11,7 +11,7 @@
   width: 40%;
   color: rgb(245, 245, 245);
 }
-#nav_2#nav_3,#nav_4,#nav_5 {
+#nav_2,#nav_3,#nav_4,#nav_5 {
   width: 10%; 
   text-align: center; 
   color: rgb(245, 245, 245);
