@@ -24,13 +24,21 @@ export const Register=()=>{
     
     return(
         <>
+        <div className="Log">
+          <div className="LogAll">
             <h1>Register</h1>
-            <label>Username :</label>
-            <input placeholder="Enter username" value={user.Username} type="text" onChange={(e) => setUser({ ...user, Username: e.target.value })}/>
-            <label>Password :</label>
-            <input placeholder="Enter password" value={user.Password} type="password" onChange={(e)=>setUser({...user,Password:e.target.value})}/>
+            <form className="Form">
+            <label>Username : </label>
+            <input style={{padding:'5px',borderRadius:'10px',border:'0'}} placeholder="Enter username" value={user.Username} type="text" onChange={(e) => setUser({ ...user, Username: e.target.value })}/><br></br><br></br>
+            <label>Password : </label>
+            <input style={{padding:'5px',borderRadius:'10px',border:'0'}} placeholder="Enter password" value={user.Password} type="password" onChange={(e)=>setUser({...user,Password:e.target.value})}/><br></br><br></br>
+            <div>
             <button onClick={handleRegister}>Register</button>
-            <Link to="/"><button>Login</button></Link>
+            <Link to="/"><button style={{marginLeft:'10px'}}>Login</button></Link>
+            </div>
+            </form>
+            </div>
+            </div>
         </>
     )
 }
