@@ -44,22 +44,42 @@ export const Home = () => {
         setTask('');
         
     }
-    const[reset,setReset]=useState(null)
+    // const handleEdit=(a,index)=>{
+    //     setEdit(null)
+    //     setTasks([...tasks])
+    // }
+    const[reset,setReset]=useState(List)
     const[user,setUser]=useState(userName)
     const[pass,setPassword]=useState(password)
-    const Data=[user,pass]
+    // const Data=[user,pass]
           
     const handleUpdate=()=>{
-       console.log(user)
-       localStorage.setItem("Update",JSON.stringify(Data)) 
-       const Datas=localStorage.getItem("Update")
-       const DataA=JSON.parse(Datas)
-       const USERS=Users.filter
+      
+//    console.log(user)
+    //    localStorage.setItem("Update",JSON.stringify(Data)) 
+    //    const Datas=localStorage.getItem("Update")
+    //    const DataA=JSON.parse(Datas)
+    //    const USERS=Users.filter(a=>a===Data)
+    localStorage.setItem("Username",user)
+    localStorage.setItem("Password",pass)
+    setReset([...tasks,task])
+    const User=JSON.parse(localStorage.getItem('users'))
+    const UserName=localStorage.getItem('Username')
+    const Hello= User.filter(a=>a.Username===UserName.user)
+    console.log(Hello)
+      
+ //    console.log(DataA)
+    }
+
+    const[line,setLine]=useState('')
+    const[linecolor,setlineColor]=useState({color:'black'})
+    const handleLine=(index)=>{
+        setLine((b) => ({...b,[index]: !b[index]}));
+        // setlineColor({color:'red'})
     }
     return (
         <>
             <div>
-                
                 {/* <div className="Round"> */}
                     {reset!==true?(
                         <>
@@ -91,10 +111,14 @@ export const Home = () => {
                             </>  
                         ):(
                             <>
-                    <td style={{color:'rgb(208, 242, 136)',border:'2px solid white',textAlign:'center'}}>{index+1}</td>
-                   <td><b style={{color:'rgb(208, 242, 136)',marginLeft:'20px',}}>{a}</b></td>  <td><input className="Check"  type="checkbox"/></td>
-                   <td style={{marginLeft:'20px',border:'2px solid white',textAlign:'center'}}> <button className="Edit" onClick={()=>setEdit(index)}><FaEdit /></button></td>
-                   <td style={{marginLeft:'20px',border:'2px solid white',textAlign:'center'}}><button className="Delete" onClick={()=>handleDelete(index)}><FaTrash /></button></td>
+                    <td style={{color:'rgb(208, 242, 136)',border:'2px solid white',textAlign:'center'}}>{index+1}
+                    </td>
+                   <td><b style={{color:'rgb(208, 242, 136)',marginLeft:'20px',textDecoration:line[index]?`line-through ${linecolor.color}`:'none'}}>{a}</b> </td>  
+                   <td><input onClick={()=>handleLine(index)} type="checkbox"/></td>
+                   <td style={{marginLeft:'20px',border:'2px solid white',textAlign:'center'}}> 
+                   <button onClick={()=>setEdit(index)}><FaEdit /></button></td>
+                   <td style={{marginLeft:'20px',border:'2px solid white',textAlign:'center'}}>
+                    <button onClick={()=>handleDelete(index)}><FaTrash /></button></td>
                     </>)}
                     </tr>
                 )}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+//   const A=["apple","orange","grapes"]
+//   A[3]="coco"
+//   A.unshift("mango")
+// //   A.pop()
+//   console.log(A)
+
+
+// const person={
+//     name:'jk',
+//     city:'hh',
+//     age:30,
+//     hobby:['music','read','movies'],
+//     address:{
+//         street:'jgadj',
+//         city:'kjahsj',
+//         state:'kxk'
+//     }
+// }
+// console.log(person.hobby[1])
+// const {  name ,city,hobby:[music],address:{ state } }=person
+// console.log(state)
+// person.email="manieshkT@gmail.com"
+// console.log(person)
+
+
+// const Todo=[{
+//     id:1,
+//     text:"ghdghagsj",
+//     completed:true
+// },
+// {
+//     id:2,
+//     text:"hello",
+//     completed:true
+// },{
+//     id:3,
+//     text:"hagj",
+//     completed:false
+// },
+// ]
+
+//  Todo.forEach(element=>console.log(element.text))
+// Todo.forEach(element=> console.log(element.id))
+// const todos=Todo.map(a=>a.text)
+// console.log(todos)
+// const Completed=Todo.filter(a=>a.completed===true).map(a=>a.text)
+// console.log(Completed)
+
+// for (let a of Todo){
+//     console.log(a.text)
+// }
+// console.log(Todo[0].text)
+// const [{id}]=Todo
+// console.log(id)
+
+// for (let i=0;i<=10;i++){
+//     console.log(`number : ${i}`)
+// }
+// for (let i=0;i<=100;i++){
+//     if(i%2==0){
+//         console.log(`Even : ${i}`)
+//     }
+//     else{
+//         console.log(`odd : ${i}`)
+//     }
+// }
+
+// const x=1
+// const condition=x<10?true:false
+// console.log(condition)
+
+// function mul(num1,num2,num3){
+//     return(num1*num2+num3)
+// }
+// console.log(mul(4,2,2))
+// const sum=(num1,num2)=>{
+//     return(num1+num2)
+// }
+// console.log(sum(5,5))
+// function Person(name,city,dob){
+//     this.name=name,
+//     this.city=city,
+//     this.dob=new Date(dob)
+// }
+
+class Person{
+    constructor(name,city,dob){
+        this.name=name;
+        this.city=city;
+        this.dob=dob
+    }
+    year(){
+        return this.dob.getFullYear()
+    }
+    get(){
+        return `${this.name} ${this.city}`
+    }
+}
+const Person1= new Person('john','vegas','1-2-1999')
+console.log(Person1)
+
+</script>
+</html>
