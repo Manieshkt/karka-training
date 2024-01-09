@@ -7,7 +7,7 @@ export const Home = () => {
     const userName = localStorage.getItem('Username');
     const password=localStorage.getItem('Password')
     const Users=localStorage.getItem('users')
-    console.log(Users)
+    // console.log(Users)
     const navigate = useNavigate();
     const handleLogout = () => {
         navigate('/');
@@ -24,6 +24,7 @@ export const Home = () => {
     const handleAdd = () => {
         setTask('')
         setTasks([...tasks, task])
+        setSearch(false)
     }
     const handleDelete=(index)=>{
         const Delete=tasks.filter((a,i)=>i!==index)
@@ -52,22 +53,19 @@ export const Home = () => {
     const[user,setUser]=useState(userName)
     const[pass,setPassword]=useState(password)
     // const Data=[user,pass]
-          
     const handleUpdate=()=>{
-      
-//    console.log(user)
-    //    localStorage.setItem("Update",JSON.stringify(Data)) 
-    //    const Datas=localStorage.getItem("Update")
-    //    const DataA=JSON.parse(Datas)
-    //    const USERS=Users.filter(a=>a===Data)
     localStorage.setItem("Username",user)
     localStorage.setItem("Password",pass)
     setReset([...tasks,task])
     const User=JSON.parse(localStorage.getItem('users'))
     const UserName=localStorage.getItem('Username')
-    const Hello= User.filter(a=>a.Username===UserName.user)
-    console.log(Hello)
-      
+    const Pass=localStorage.getItem('Password')
+    // const Hello= User.find(a=>a.Username===UserName&& a.Password===Pass)
+    
+    // const Main=localStorage.setItem('users')
+    // console.log(user)
+    // console.log(pass)
+    // console.log(Hello)
  //    console.log(DataA)
     }
 
@@ -77,19 +75,21 @@ export const Home = () => {
         setLine((b) => ({...b,[index]: !b[index]}));
         // setlineColor({color:'red'})
     }
+
+    const[search,setSearch]=useState('')
+    const Search=tasks.filter(a=>a===task)
+    const handleSearch=()=>{
+        // console.log(Search)
+        setSearch(true)
+    }
     return (
         <>
             <div>
-                {/* <div className="Round"> */}
                     {reset!==true?(
                         <>
                          <b onClick={()=>setReset(true)}>Profile</b>
-                        
                         </>
-                        // </div>
-                    ):(
-                    
-               
+                    ):(               
                 <>
                 <label>Username : </label><input type="text" value={user} onChange={(e)=>setUser(e.target.value)}/><br></br>
                 <label>Password : </label><input type="password" value={pass} onChange={(e)=>setPassword(e.target.value)}/>
@@ -99,9 +99,12 @@ export const Home = () => {
                 <div className="All">
                 <h2  >Welcome, {userName} Create Your tasks</h2>
                 <input  type="text" value={task} onChange={(e) => setTask(e.target.value)} /><button onClick={handleAdd}>Add</button>
+                <button style={{marginTop:'5px'}} onClick={handleSearch}>Search</button>
                 </div>
+
                 <div className="List">
-                <table className="Num">{tasks.map((a,index) =>
+                        {search===true?(
+                         <table className="Num">{Search.map((a,index) =>
                     <tr key={index} >
                         {edit===index?(
                             <>
@@ -123,6 +126,31 @@ export const Home = () => {
                     </tr>
                 )}
                 </table>
+                        ):(
+
+
+                <table className="Num">{tasks.map((a,index) =>
+                    <tr key={index} >
+                        {edit===index?(
+                            <>
+                            <td style={{border:'2px solid white',textAlign:'center',color:'rgb(208, 242, 136)'}}>{index+1}</td>
+                            <td><input  type="text" value={task} onChange={(e) => setTask(e.target.value)} /></td>
+                            <td > <button onClick={() => handleEdit(index)}>Save</button>   </td>
+                            </>  
+                        ):(
+                            <>
+                    <td style={{color:'rgb(208, 242, 136)',border:'2px solid white',textAlign:'center'}}>{index+1}
+                    </td>
+                   <td><b style={{color:'rgb(208, 242, 136)',marginLeft:'20px',textDecoration:line[index]?`line-through ${linecolor.color}`:'none'}}>{a}</b> </td>  
+                   <td><input onClick={()=>handleLine(index)} type="checkbox"/></td>
+                   <td style={{marginLeft:'20px',border:'2px solid white',textAlign:'center'}}> 
+                   <button onClick={()=>setEdit(index)}><FaEdit /></button></td>
+                   <td style={{marginLeft:'20px',border:'2px solid white',textAlign:'center'}}>
+                    <button onClick={()=>handleDelete(index)}><FaTrash /></button></td>
+                    </>)}
+                    </tr>
+                )}
+                </table>)}
                 </div>
             </div>
         </>
