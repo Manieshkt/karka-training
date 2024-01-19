@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <h1 >Hello World</h1>
+    <p id="one" >Hi</p>
+    <button onClick="Fun()">Change</button>
+    <ul id="two"></ul>
+</body>
+<script>
+    const Name="Maniesh"
+    console.log(Name)
+
+    const num1=10
+    const num2=10
+    const total=num1+num2
+    const sum=total
+    console.log(sum)
+
+    function add(num1,num2){
+        const suma=num1+num2
+        console.log(suma)
+    }
+    add(3,2)
+  
+    function Even(Num){
+        if(Num%2===0){
+            console.log('Number is Even')
+        }
+        else{
+            console.log('False')
+        }
+    }
+    Even(4)
+
+    const Fruit=['apple','orange','mango']
+    Fruit.push('grapes')
+    console.log(Fruit)
+
+    const Max=[1,3,5,6,18,10]
+    let MaxNumber=Max[0]
+    for (let i=1;i<Max.length;i++){
+        if(Max[i]>MaxNumber){
+            MaxNumber=Max[i]
+        }
+    }
+    console.log(MaxNumber)
+
+    const Person={
+        name:'John',
+        age:20,
+        city:'texas'
+    }
+    console.log(Person)
+
+    const Temperature=25
+    if(Temperature>30){
+        console.log('Temperature is greater')
+    }
+    else if(Temperature<10){
+        console.log('Below 10')
+    }
+    else if(Temperature<30 && Temperature>10){
+        console.log('Inbetween')
+    }
+    else{
+        console.log(Temperature)
+    }
+
+    const Day='Wednesday'
+    if (Day==='Monday'){
+        console.log('First Day')
+    }
+    else if(Day==='Tuesday'){
+        console.log('Second Day')
+    } else if(Day==='Wednesday'){
+        console.log('Third Day')
+    } else if(Day==='Thursday'){
+        console.log('Fourth Day')
+    } else if(Day==='Friday'){
+        console.log('Fifth Day')
+    } else if(Day==='Saturday'){
+        console.log('Sixth Day')
+    } else if(Day==='Sunday'){
+        console.log('Seventh Day')
+    }
+    else{
+        console.log('Error')
+    }
+
+    for (let i=1;i<=5;i++){
+        console.log(i)
+    }
+
+    const Factorial=[]
+    let fact=1
+    for (let i=1;i<=5;i++){
+        fact*=i
+        Factorial.push(fact)
+    }
+    console.log(Factorial)
+
+    const First='Hello'
+    const Second=' I am -'
+    const Third= First.concat(Second)
+    console.log(Third)
+    console.log(First.length)
+    console.log(First.toUpperCase())
+
+    const Fun=()=>{
+        document.getElementById('one').innerHTML="hello"
+    }
+
+    const Link=Fruit.map((a,index)=>`<li>${a}</li>`)
+    document.getElementById('two').innerHTML=Link.join('')
+
+    let Num=0
+    for (let i=1;i<=5;i++){
+        Num+=i     
+    }
+    console.log(Num)
+
+    for(let i=1;i<=5;i++){
+        let Row=''
+        for(let j=1;j<=5;j++){
+            let result=i*j
+            // console.log(result)
+            Row+=` ${result} `
+        }
+        console.log(Row)
+    }
+</script>
+</html>

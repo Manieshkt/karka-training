@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+}
+.Display{
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.45) inset;
+  margin: 5px;
+  height: 450px;
+}
+.title{
+  width: 100%;
+}
+.image{
+  width: 50%;
+  height: 130px;
+}
+.Cart{
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+}
