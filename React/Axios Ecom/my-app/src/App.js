@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
 import { FaStar } from "react-icons/fa"; 
-import {useEffect, useRef, useState} from 'react'
+import {useEffect, useState} from 'react'
 
 function App() {
   const Url='https://fakestoreapi.com/products'
@@ -36,7 +36,7 @@ function App() {
       {data.map((a,index)=>
       <div className='Display'>     
         <img src={a.image} alt='None' style={{height:'100px',width:'50%',borderRadius:'50%'}}/>     
-        {/* <p style={{height:'130px',overflow:'hidden',textAlign:'justify',margin:'20px'}}>{a.description}</p> */}
+        {/* <p style={{height:'130px',overflow:'hidden',textAlign:'justify',margin:'20px'}}>Description : {a.description}</p> */}
       <p><b>Category : {a.category.toUpperCase()}</b></p>
       <p><b>Price : ${a.price}</b></p>
        <b> Rating : {a.rating.rate}  {Star(a.rating.rate)}</b>

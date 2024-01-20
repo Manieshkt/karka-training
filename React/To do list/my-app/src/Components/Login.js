@@ -11,7 +11,7 @@ export const Login=()=>{
     const foundUser = existingUsers.find(
       (u) => u.Username === user.Username && u.Password === user.Password
     );
-
+console.log(foundUser)
     if (foundUser) {
       localStorage.setItem('Username', user.Username);
       localStorage.setItem('Password',user.Password)

@@ -11,7 +11,8 @@ export const Register=()=>{
 
       if (isUsernameTaken) {
         alert('Username is already taken. Please choose another username.');
-      } else {
+      } 
+      else {
         const updatedUsers = [...existingUsers, user];
         localStorage.setItem('users', JSON.stringify(updatedUsers));
         alert('Registration successful. You can now login.');

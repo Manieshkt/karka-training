@@ -1,15 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-import { Counter } from './Components/Counter'; 
+import { Task } from './Components/Task';
 import { useState } from 'react';
 
-function App() {
-  const [hello,setHello]=useState("hi")
+function App() {  
   return (
+    <>
     <div className="App">
-      <Counter Hello={hello}/>
+      <Task/>
     </div>
+    </>
   );
-}
+  }
 
 export default App;

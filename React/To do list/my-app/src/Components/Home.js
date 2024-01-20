@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react"
 import { FaTrash } from "react-icons/fa";
 import { FaEdit } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { json, useNavigate } from "react-router-dom";
 
 export const Home = () => {
     const userName = localStorage.getItem('Username');
     const password=localStorage.getItem('Password')
     const Users=localStorage.getItem('users')
-    // console.log(Users)
     const navigate = useNavigate();
     const handleLogout = () => {
         navigate('/');
@@ -32,12 +31,6 @@ export const Home = () => {
     }
     const[edit,setEdit]=useState(null)
     const handleEdit=(index)=>{
-        // const Edit=tasks.find((i)=>i===index)
-        // setEdit(null)   
-        // setTask('')
-        // const Edit=tasks[index]
-        // setEdit(index)
-        // setTask(Edit)
         const Edit = [...tasks];
         Edit[index] = task;
         setTasks(Edit);
@@ -45,10 +38,6 @@ export const Home = () => {
         setTask('');
         
     }
-    // const handleEdit=(a,index)=>{
-    //     setEdit(null)
-    //     setTasks([...tasks])
-    // }
     const[reset,setReset]=useState(List)
     const[user,setUser]=useState(userName)
     const[pass,setPassword]=useState(password)
@@ -60,13 +49,15 @@ export const Home = () => {
     const User=JSON.parse(localStorage.getItem('users'))
     const UserName=localStorage.getItem('Username')
     const Pass=localStorage.getItem('Password')
-    // const Hello= User.find(a=>a.Username===UserName&& a.Password===Pass)
     
-    // const Main=localStorage.setItem('users')
-    // console.log(user)
-    // console.log(pass)
-    // console.log(Hello)
- //    console.log(DataA)
+    const Main=[{
+        Username:UserName,
+        Password:Pass
+    }]
+    console.log(Main)
+    localStorage.setItem('users',JSON.stringify(Main))    
+    const Storage=JSON.parse(localStorage.getItem('users'))
+    console.log(Storage)
     }
 
     const[line,setLine]=useState('')
