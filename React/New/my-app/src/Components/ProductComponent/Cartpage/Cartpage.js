@@ -24,6 +24,7 @@ export const Cartpage=({product,count,setCount,Filter,setFilter})=>{
                       <span><b>Price : </b>{items.price} $ </span>
                       <span style={{marginLeft:'5px'}}><b>Stock : </b>{items.stock} No's</span>
                       <p><b>Rating : </b>{items.rating} <Star rating={items.rating}/></p>
+                      <b>0</b>
                       <Remove handleRemove={handleRemove} index={index} />
                 </div>
                 )}

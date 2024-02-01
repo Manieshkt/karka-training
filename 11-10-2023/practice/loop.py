@@ -26,5 +26,3 @@ num=int(input("enter range"))
 for values in range(100):
         if values%1==0:
          print(values)
-    
-

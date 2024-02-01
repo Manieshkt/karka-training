@@ -1,0 +1,23 @@
+[
+    {
+        "Id":1,
+        "Name":"Ankit",
+        "Age":18,
+        "Subject":"maths",
+        "Percentage":82
+    },
+    {
+        "Id":2,
+        "Name":"Rahul",
+        "Age":17,
+        "Subject":"science",
+        "Percentage":75
+    },
+    {
+        "Id":3,
+        "Name":"Aishu",
+        "Age":18,
+        "Subject":"English",
+        "Percentage":92
+    }
+]
