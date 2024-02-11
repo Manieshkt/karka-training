@@ -9,8 +9,8 @@ function App() {
   const [regname, setRegname] = useState('')
   const [regpass, setRegpass] = useState('')
   const [regerror, setRegerror] = useState('')
-  const[logname,setlogName]=useState('')
-  const[logpass,setlogPass]=useState('')
+  const [logname, setlogName] = useState('')
+  const [logpass, setlogPass] = useState('')
   return (
     <Router>
       <div className="App">
