@@ -1,0 +1,21 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.App {
+  text-align: center;
+}
+.table{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 5px;
+  /* column-gap: 20px; */
+}
+.table_row{
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+}
+#image{
+  height: 150px;
+}
