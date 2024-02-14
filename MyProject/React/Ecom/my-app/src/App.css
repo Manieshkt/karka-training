@@ -8,8 +8,7 @@
 .table{
   display: grid;
   grid-template-columns: auto auto auto;
-  row-gap: 5px;
-  /* column-gap: 20px; */
+  row-gap: 20px;
 }
 .table_row{
   display: flex;

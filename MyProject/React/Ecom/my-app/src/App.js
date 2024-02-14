@@ -20,15 +20,18 @@ function App() {
       })
   },[])
 
-  const[regname,setRegame]=useState('')
+  const[regname,setRegname]=useState('')
   const[regpass,setRegpass]=useState('')
+  const[error,setError]=useState('')
+  const[logname,setLogname]=useState('')
+  const[logpass,setLogpass]=useState('')
 
   return (
     <Router>
     <div className="App">    
         <Routes>         
-          <Route path='/' element={<Login />} />
-          <Route path='/Register' element={<Register />} />
+          <Route path='/' element={<Login logname={logname} logpass={logpass} error={error} setError={setError} setLogpass={setLogpass} setLogname={setLogname}/>} />
+          <Route path='/Register' element={<Register regname={regname} regpass={regpass} error={error} setError={setError} setRegpass={setRegpass} setRegname={setRegname} />} />
           <Route path='/Products' element={<Products data={data} />} />
           <Route path='/Cartpage' element={<Cartpage/>} />
         </Routes>        
