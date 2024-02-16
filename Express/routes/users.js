@@ -10,7 +10,8 @@ router.use(loggingMiddleware)
 const mockusers=[
     {id:1,username:'Bruce',displayname:'Bruce Wayne'},
     {id:2,username:'Wayne',displayname:'Wayne Tech'},
-    {id:3,username:'Clark',displayname:'Clark Kent'}
+    {id:3,username:'Clark',displayname:'Clark Kent'},
+    {id:4,username:'Batman',displayname:'The Dark Knight'}
 ]
 
 router.get('/',loggingMiddleware,(req,res)=>{
