@@ -32,10 +32,10 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path='/' element={<Login logname={logname} logpass={logpass} setLogpass={setLogpass} setLogname={setLogname} />} />
+          <Route path='/' element={<Login logname={logname} setCount={setCount} setFilter={setFilter} logpass={logpass} setLogpass={setLogpass} setLogname={setLogname} />} />
           <Route path='/Register' element={<Register regname={regname} regpass={regpass} error={error} setError={setError} setRegpass={setRegpass} setRegname={setRegname} />} />
-          <Route path='/Products' element={<Products logname={logname} filter={filter} setFilter={setFilter} data={data} count={count} setCount={setCount} />} />
-          <Route path='/Cartpage' element={<Cartpage filter={filter} setFilter={setFilter} count={count} setCount={setCount} />} />
+          <Route path='/Products' element={<Products logname={logname} setLogname={setLogname} filter={filter} setFilter={setFilter} data={data} count={count} setCount={setCount} />} />
+          <Route path='/Cartpage' element={<Cartpage logname={logname} setLogname={setLogname} filter={filter} setFilter={setFilter} count={count} setCount={setCount} />} />
         </Routes>
       </div>
     </Router>

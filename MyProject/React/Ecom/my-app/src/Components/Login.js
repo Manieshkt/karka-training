@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const Login = ({ logname, setLogname, logpass, setLogpass }) => {
+export const Login = ({ logname, setLogname, logpass, setLogpass,setCount,setFilter }) => {
     const [error, setError] = useState('')
     const navigate = useNavigate()
 
-    const handleLogin = () => {
+    const handleLogin = (e) => {
+        e.preventDefault()
         const Users = JSON.parse(localStorage.getItem('UserData'))
         if (Users) {
             const log = {
@@ -15,6 +16,15 @@ export const Login = ({ logname, setLogname, logpass, setLogpass }) => {
 
             const checkUsers = Users.find((user) => user.username === log.username && user.password === log.password)
             if (checkUsers) {
+                localStorage.setItem('UserName',log.username)
+                const existingCart = localStorage.getItem(log.username);
+                if (!existingCart) {
+                    setFilter([]);
+                    setCount(0);
+                } else {
+                    setFilter(JSON.parse(existingCart));
+                    setCount(JSON.parse(existingCart).length);
+                }
                 navigate('./Products')
             }
             else if (logname === '' && logpass === '') {

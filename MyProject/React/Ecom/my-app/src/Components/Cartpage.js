@@ -1,19 +1,46 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Nav } from "./Nav";
 import { RemovefromCart } from "./Buttons/RemovefromCart";
 
-export const Cartpage = ({ filter, setFilter, count, setCount }) => {
+export const Cartpage = ({ filter, setFilter, count, setCount,logname,setLogname }) => {
+
+    useEffect(() => {
+        const Username = localStorage.getItem("UserName");
+        setLogname(Username);
+    }, []);
+
+    useEffect(() => {
+        if (filter.length > 0) {
+          const SelectedProducts = JSON.stringify(filter);
+          localStorage.setItem(logname, SelectedProducts);
+        }
+      }, [filter,logname]);
+
+      useEffect(() => {
+        const Username = localStorage.getItem("UserName");
+        const SelectedProducts = localStorage.getItem(Username);
+      
+        if (SelectedProducts) {
+          setFilter(JSON.parse(SelectedProducts));
+          setCount(JSON.parse(SelectedProducts).length);
+        }
+      }, [logname]);
+
 
     const [addCount, setAddCount] = useState(1)
     const price = filter.map(a => a.price)
     const sum = price.reduce((accumulator, currentvalue) => accumulator + currentvalue, 0)
 
-    const Save = JSON.parse(localStorage.getItem('Products'))
-    console.log(Save)
-
-    const handleAdd = (index) => {
-
-    }
+    // const handleAdd = (index) => {
+    //     const selectedItems = filter[index];
+    //     const Check = filter.some((product) => product.id === selectedItems.id);
+    //     if (!Check) {
+    //         setFilter((selectedProduct) => [...selectedProduct, selectedItems]);
+    //         setAddCount(addCount + 1);
+    //     } else {
+    //         alert("Item already in Cart");
+    //     }
+    // }
 
     const handleDec = () => {
         if (addCount > 0) {
@@ -25,7 +52,7 @@ export const Cartpage = ({ filter, setFilter, count, setCount }) => {
             {filter.length !== 0 ? (
                 <>
                     <nav>
-                        <Nav count={count} setCount={setCount} />
+                        <Nav count={count} setCount={setCount} setLogname={setLogname} />
                     </nav>
                     <table className="table">
                         {filter.map((product, index) => <tr className="table_row">
@@ -35,7 +62,7 @@ export const Cartpage = ({ filter, setFilter, count, setCount }) => {
                             <td style={{ height: "20px", margin: "5px" }}>Rating : {product.rating}</td>
                             <td style={{ height: "20px", margin: "5px" }}>In Stock : {product.stock}</td>
                             <td>
-                                <button onClick={() => handleAdd(index)} >+</button>
+                                {/* <button onClick={() => handleAdd(index)} >+</button> */}
                                 <b>{addCount}</b>
                                 <button onClick={handleDec} >-</button>
                             </td>
