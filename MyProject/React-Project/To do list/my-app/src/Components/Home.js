@@ -13,7 +13,7 @@ export const Home = () => {
   const [user, setUser] = useState(userName);
   const [pass, setPassword] = useState(localStorage.getItem("Password") || "");
   const [line, setLine] = useState({});
-  const [search, setSearch] = useState(false);
+  // const [search, setSearch] = useState(false);
 
   useEffect(() => {
     const stringifiedTasks = JSON.stringify(tasks);
@@ -27,7 +27,7 @@ export const Home = () => {
   const handleAdd = () => {
     setTask("");
     setTasks([...tasks, task]);
-    setSearch(false);
+    // setSearch(false);
   };
 
   const handleDelete = (index) => {
@@ -89,9 +89,9 @@ export const Home = () => {
           <h2>Welcome, {userName} Create Your tasks</h2>
           <input type="text" value={task} onChange={(e) => setTask(e.target.value)} />
           <button onClick={handleAdd}>Add</button>
-          <button style={{ marginTop: "5px" }} onClick={() => setSearch(!search)}>
+          {/* <button style={{ marginTop: "5px" }} onClick={() => setSearch(!search)}>
             Search
-          </button>
+          </button> */}
         </div>
 
         <div className="List">
