@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body{
+    border: 50px solid black;
+}*/
+header{
+    margin: 50px;
+} 
+.container{
+    display: flex;
+}
+.myself{
+    width: 40%;
+}
+#job{
+    margin-top: 20px;
+}
+.class{
+    margin-top: 20px;
+}
+.education{
+    margin-top: 20px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
