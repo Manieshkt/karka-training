@@ -16,7 +16,7 @@ body{
     display: flex;
     height: 100px;
     background-color: white;
-    position: relative;
+    /* position: relative; */
     align-items: center;
     justify-content: space-evenly;
     padding: 20px;
@@ -1578,7 +1578,7 @@ body{
         display: flex;
         height: 100px;
         background-color: white;
-        position: relative;
+        /* position: relative; */
         align-items: center;
         justify-content: space-evenly;
         padding: 20px;
@@ -3133,9 +3133,9 @@ body{
         width: 100%;
        
     }
-    /* .barr{
+    .barr{
         display: block !important;
-    } */
+    }
     .total_abc{
         width: 100%;
     }
@@ -3145,7 +3145,7 @@ body{
         background-color: white;
         position: relative;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
         padding: 20px;
         position: sticky;
         top: 1px;
@@ -3161,22 +3161,24 @@ body{
         text-decoration-color: orangered;
         text-decoration-thickness: 3px;
         text-underline-offset: 8px ;
+        display: none;
     }
     
     .nav_c{
         font-size: larger;
         color: gray;
+        display: none;
     }
     .nav_c:hover{
         text-decoration: underline ;
         text-decoration-color: orangered;
         text-decoration-thickness: 3px;
         text-underline-offset: 8px ;
-    
     }
     .nav_d{
         font-size: larger;
         color: gray;
+        display: none;
     }
     .nav_d:hover{
         text-decoration: underline ;
@@ -3187,6 +3189,7 @@ body{
     .nav_e{
         font-size: larger;
         color: gray;
+        display: none;
     }
     .nav_e:hover{
         text-decoration: underline ;
@@ -3197,6 +3200,7 @@ body{
     .nav_f{
         color: gray;
         font-size: larger;
+        display: none;
     }
     .nav_f:hover{
         text-decoration: underline ;
@@ -3207,7 +3211,7 @@ body{
     .nav_g{
         font-size: larger;
         color: gray;
-        
+        display: none;
     }
     .nav_g:hover{
         text-decoration: underline ;
@@ -3218,6 +3222,7 @@ body{
     .nav_h{
         font-size: larger;
         color: gray;
+        display: none;
     }
     .nav_h:hover{
         text-decoration: underline ;
@@ -3228,6 +3233,7 @@ body{
     .nav_i{
         font-size: larger;
         color: gray;
+        display: none;
     }
     .nav_i:hover{
         text-decoration: underline ;
@@ -3241,6 +3247,7 @@ body{
         background-color:rgb(189, 47, 47);
         border: 0;
         color: white;
+        display: none;
     }
     .head{
         display: flex;

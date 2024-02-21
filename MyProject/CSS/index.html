@@ -29,7 +29,7 @@
             </select>
             <div class="nav_i"><b>Contact</b></div>
             <button class="nav_j" style="border-radius: 20px;">Book a Table</button>
-            <i class="barr fa-solid fa-bars" style="font-size: xx-large;"></i>
+            <i class="barr fa-solid fa-bars" id="bar" style="font-size: xx-large;"></i>
         </div>
 
         <div class="head">
@@ -612,7 +612,16 @@
             $(".carousel_1").hide()
             $(".carousel_3").hide()
         })
+        $("#bar").click(function(){
+            $(".nav_b").show()
+            $(".nav_c").show()
+            $(".nav_d").show()
+            $(".nav_e").show()
+            $(".nav_f").show()
+            $(".nav_g").show()
+            $(".nav_h").show()
 
+        })
 
     })
 </script>
